@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="双馈变流器" name="双馈电机参数">
+		<point id="341" type="yt" addr="100" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="N.m" 	remark="" sysremark="" name="额定转矩" 		category="双馈电机参数"/>
+		<point id="342" type="yt" addr="102" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="rpm" 	remark="" sysremark="" name="额定转速" 		category="双馈电机参数"/>
+		<point id="343" type="yt" addr="104" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="V" 	remark="" sysremark="" name="额定电压" 		category="双馈电机参数"/>
+		<point id="344" type="yt" addr="106" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="V" 	remark="" sysremark="" name="开口电压" 		category="双馈电机参数"/>
+		<point id="345" type="yt" addr="108" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="Ω" 	remark="" sysremark="" name="转子电阻" 		category="双馈电机参数"/>
+		<point id="346" type="yt" addr="110" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="Ω" 	remark="" sysremark="" name="定子电阻" 		category="双馈电机参数"/>
+		<point id="347" type="yt" addr="112" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="Ω" 	remark="" sysremark="" name="转子漏抗" 		category="双馈电机参数"/>
+		<point id="348" type="yt" addr="114" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="Ω" 	remark="" sysremark="" name="定子漏抗" 		category="双馈电机参数"/>
+		<point id="349" type="yt" addr="116" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="Ω" 	remark="" sysremark="" name="励磁电抗" 		category="双馈电机参数"/>
+		<point id="350" type="yt" addr="118" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="351" type="yt" addr="120" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="352" type="yt" addr="122" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="353" type="yt" addr="124" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="354" type="yt" addr="126" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="355" type="yt" addr="128" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="356" type="yt" addr="260" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="额定转矩放大倍数" 	category="双馈电机参数"/>
+		<point id="357" type="yt" addr="262" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="额定转速放大倍数" 	category="双馈电机参数"/>
+		<point id="358" type="yt" addr="264" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="额定电压放大倍数" 	category="双馈电机参数"/>
+		<point id="359" type="yt" addr="266" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="开口电压放大倍数" 	category="双馈电机参数"/>
+		<point id="360" type="yt" addr="268" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="转子电阻放大倍数" 	category="双馈电机参数"/>
+		<point id="361" type="yt" addr="270" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="定子电阻放大倍数" 	category="双馈电机参数"/>
+		<point id="362" type="yt" addr="272" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="转子漏抗放大倍数" 	category="双馈电机参数"/>
+		<point id="363" type="yt" addr="274" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="定子漏抗放大倍数" 	category="双馈电机参数"/>
+		<point id="364" type="yt" addr="276" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="励磁电抗放大倍数" 	category="双馈电机参数"/>
+		<point id="365" type="yt" addr="278" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="366" type="yt" addr="280" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="367" type="yt" addr="282" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="368" type="yt" addr="284" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="369" type="yt" addr="286" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+		<point id="370" type="yt" addr="288" datalen="2" datatype="U32" datalimitmin="1" datalimitmax="4294967296" cof="1" unit="" 	remark="" sysremark="" name="" 			category="双馈电机参数"/>
+	</device>
+</root>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="系统控制参数">
+		<point id="195" type="yt" addr="13815" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+		<point id="196" type="yt" addr="13816" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="V" 	remark="" sysremark="" name="运行电网电压" 	category="系统控制参数"/>
+		<point id="197" type="yt" addr="13817" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="A" 	remark="" sysremark="" name="额定电流" 		category="系统控制参数"/>
+		<point id="198" type="yt" addr="13818" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="A" 	remark="" sysremark="" name="滤波电容电流" 	category="系统控制参数"/>
+		<point id="199" type="yt" addr="13819" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="滤波电流UP系数" 	category="系统控制参数"/>
+		<point id="200" type="yt" addr="13820" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="滤波电流DW系数" 	category="系统控制参数"/>
+		<point id="201" type="yt" addr="13821" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="A" 	remark="" sysremark="" name="无功动态补偿" 	category="系统控制参数"/>
+		<point id="202" type="yt" addr="13822" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="A/s" 	remark="" sysremark="" name="机侧Id响应速度" 	category="系统控制参数"/>
+		<point id="203" type="yt" addr="13823" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="A/s" 	remark="" sysremark="" name="机侧Iq响应速度" 	category="系统控制参数"/>
+		<point id="204" type="yt" addr="13824" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="A/s" 	remark="" sysremark="" name="网侧Iq响应速度" 	category="系统控制参数"/>
+		<point id="205" type="yt" addr="13825" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="电网过压系数" 		category="系统控制参数"/>
+		<point id="206" type="yt" addr="13826" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="电网欠压系数" 		category="系统控制参数"/>
+		<point id="207" type="yt" addr="13827" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="V" 	remark="" sysremark="" name="正负母线偏差值" 	category="系统控制参数"/>
+		<point id="208" type="yt" addr="13828" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="V" 	remark="" sysremark="" name="直流电压封波值" 	category="系统控制参数"/>
+		<point id="209" type="yt" addr="13829" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="V" 	remark="" sysremark="" name="直流欠压值" 		category="系统控制参数"/>
+		<point id="210" type="yt" addr="13830" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="V" 	remark="" sysremark="" name="直流过压值" 		category="系统控制参数"/>
+		<point id="211" type="yt" addr="13831" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="V" 	remark="" sysremark="" name="橇棒过压值" 		category="系统控制参数"/>
+		<point id="212" type="yt" addr="13832" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="V" 	remark="" sysremark="" name="橇棒开通值" 		category="系统控制参数"/>
+		<point id="213" type="yt" addr="13833" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="V" 	remark="" sysremark="" name="橇棒关断值" 		category="系统控制参数"/>
+		<point id="214" type="yt" addr="13834" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="ms" 	remark="" sysremark="" name="橇棒导通限时值" 	category="系统控制参数"/>
+		<point id="215" type="yt" addr="13835" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="us"	remark="*200" sysremark="" name="橇棒最小通时" 		category="系统控制参数"/>
+		<point id="216" type="yt" addr="13836" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="%" 	remark="" sysremark="" name="网侧过流系数" 		category="系统控制参数"/>
+		<point id="217" type="yt" addr="13837" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="机侧过流系数" 		category="系统控制参数"/>
+		<point id="218" type="yt" addr="13838" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="%" 	remark="" sysremark="" name="电流变化率系数" 		category="系统控制参数"/>
+		<point id="219" type="yt" addr="13839" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="ms" 	remark="" sysremark="" name="I段保护时间" 	category="系统控制参数"/>
+		<point id="220" type="yt" addr="13840" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"         unit="%" 	remark="" sysremark="" name="I段电流系数" 	category="系统控制参数"/>
+		<point id="221" type="yt" addr="13841" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="ms" 	remark="" sysremark="" name="II段保护时间" 	category="系统控制参数"/>
+		<point id="222" type="yt" addr="13842" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="II段电流系数" 	category="系统控制参数"/>
+		<point id="223" type="yt" addr="13843" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="ms" 	remark="" sysremark="" name="过负荷时间" 		category="系统控制参数"/>
+		<point id="224" type="yt" addr="13844" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="过负荷电流系数" 	category="系统控制参数"/>
+		<point id="225" type="yt" addr="13845" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="LVRT使能" 			category="系统控制参数"/>
+		<point id="226" type="yt" addr="13846" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="LVRT电网系数" 		category="系统控制参数"/>
+		<point id="227" type="yt" addr="13847" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="LVRT_Id限值系数" 	category="系统控制参数"/>
+		<point id="228" type="yt" addr="13848" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="LVRT_Id限值系数" 	category="系统控制参数"/>
+		<point id="229" type="yt" addr="13849" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="ms" 	remark="" sysremark="" name="硬件保护间隔" 	category="系统控制参数"/>
+		<point id="230" type="yt" addr="13850" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="ms" 	remark="" sysremark="" name="LVRT触发后延时"	category="系统控制参数"/>
+		<point id="231" type="yt" addr="13851" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="稳定负序系数" 	category="系统控制参数"/>
+		<point id="232" type="yt" addr="13852" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="稳定正序系数" 	category="系统控制参数"/>
+		<point id="233" type="yt" addr="13853" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="不平衡负序系数" 	category="系统控制参数"/>
+		<point id="234" type="yt" addr="13854" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="补偿Iq系数" 	category="系统控制参数"/>
+		<point id="235" type="yt" addr="13855" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="补偿Iq响应速度" 	category="系统控制参数"/>
+		<point id="236" type="yt" addr="13856" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="%" 	remark="" sysremark="" name="电机Id限值系数" 	category="系统控制参数"/>
+		<point id="237" type="yt" addr="13857" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+		<point id="238" type="yt" addr="13858" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+		<point id="239" type="yt" addr="13859" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+		<point id="240" type="yt" addr="13860" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+		<point id="241" type="yt" addr="13861" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+		<point id="242" type="yt" addr="13862" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+		<point id="243" type="yt" addr="13863" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+		<point id="244" type="yt" addr="13864" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统控制参数"/>
+	</device>
+</root>

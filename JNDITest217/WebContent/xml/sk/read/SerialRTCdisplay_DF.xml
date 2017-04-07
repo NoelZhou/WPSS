@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<root>
+	<device machinetype="双馈变流器" name="变流器RTC时钟显示">
+		<point id="171" type="yc" addr="666" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="年显示" category="变流器RTC时钟显示"/>
+		<point id="172" type="yc" addr="667" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="月显示" category="变流器RTC时钟显示"/>
+		<point id="173" type="yc" addr="668" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="日显示" category="变流器RTC时钟显示"/>
+		<point id="174" type="yc" addr="669" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="时显示" category="变流器RTC时钟显示"/>
+		<point id="175" type="yc" addr="670" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="时显示" category="变流器RTC时钟显示"/>
+		<point id="176" type="yc" addr="671" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="时显示" category="变流器RTC时钟显示"/>
+	</device>
+</root>

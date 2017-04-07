@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="双馈变流器" name="温度监控参数">
+		<point id="111" type="yc" addr="390" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="辅助变压器PT100温度" 	category="温度监控参数"/>
+		<point id="112" type="yc" addr="390" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="备用" 		     	category="温度监控参数"/>
+		<point id="113" type="yc" addr="392" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="网侧A相内侧NTC温度"  	category="温度监控参数"/>
+		<point id="114" type="yc" addr="393" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="网侧A相外侧NTC温度"  	category="温度监控参数"/>
+		<point id="115" type="yc" addr="394" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="网侧B相内侧NTC温度"  	category="温度监控参数"/>
+		<point id="116" type="yc" addr="395" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="网侧B相外侧NTC温度"  	category="温度监控参数"/>
+		<point id="117" type="yc" addr="396" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="网侧C相内侧NTC温度"  	category="温度监控参数"/>
+		<point id="118" type="yc" addr="397" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="网侧C相外侧NTC温度"  	category="温度监控参数"/>
+		<point id="119" type="yc" addr="398" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="机侧A相内侧NTC温度"  	category="温度监控参数"/>
+		<point id="120" type="yc" addr="399" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="机侧A相外侧NTC温度"  	category="温度监控参数"/>
+		<point id="121" type="yc" addr="400" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="机侧B相内侧NTC温度" 	category="温度监控参数"/>
+		<point id="122" type="yc" addr="401" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="机侧B相外侧NTC温度" 	category="温度监控参数"/>
+		<point id="123" type="yc" addr="402" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="机侧C相内侧NTC温度"  	category="温度监控参数"/>
+		<point id="124" type="yc" addr="403" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="机侧C相外侧NTC温度"  	category="温度监控参数"/>
+		<point id="125" type="yc" addr="404" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="功率柜电抗器环境温度"  category="温度监控参数"/>
+		<point id="126" type="yc" addr="405" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="功率柜模组环境温度"  	category="温度监控参数"/>
+		<point id="127" type="yc" addr="406" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="控制柜环境温度(后)"  	category="温度监控参数"/>
+		<point id="128" type="yc" addr="407" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="控制柜环境温度(前)"  	category="温度监控参数"/>
+		<point id="129" type="yc" addr="408" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="并网柜环境温度(上)"  	category="温度监控参数"/>
+		<point id="130" type="yc" addr="409" datalen="2" datatype="S16" cof="100" unit="℃" remark="" sysremark="" name="并网柜环境温度(下)"  	category="温度监控参数"/>
+	</device>
+</root>

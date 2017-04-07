@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.system.System_menuDao">
+
+	<resultMap type="System_menu" id="System_menumap">
+		<id column="id" property="id" />
+		<result column="menu_name" property="menu_name" />
+		<result column="parent_id" property="parent_id" />
+		<result column="menu_url" property="menu_url" />
+		<result column="state" property="state" />
+	</resultMap>
+
+	<!-- 新增之前 -->
+	<select id="selectMenu" resultMap="System_menumap">
+		SELECT id,menu_name,parent_id,menu_url,state from system_menu
+	</select>
+
+</mapper>

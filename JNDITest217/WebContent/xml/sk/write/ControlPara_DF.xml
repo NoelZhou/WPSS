@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<root>
+	<device machinetype="双馈变流器" name="控制参数">
+		<point id="1" 	type="yk" addr="0" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="控制字" 		category="控制参数"/>
+		<point id="2" 	type="yk" addr="1" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="参数1" 		category="控制参数"/>
+		<point id="3" 	type="yk" addr="2" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="参数2" 		category="控制参数"/>
+		<point id="4" 	type="yk" addr="3" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="参数3" 		category="控制参数"/>
+		<point id="5" 	type="yk" addr="4" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="网侧无功电流" 	category="控制参数"/>
+		<point id="6" 	type="yk" addr="5" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="7" 	type="yk" addr="6" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="直流电压补偿" 	category="控制参数"/>
+		<point id="8" 	type="yk" addr="7" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="转矩给定" 		category="控制参数"/>
+		<point id="9" 	type="yk" addr="8" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="无功给定" 		category="控制参数"/>
+		<point id="10" 	type="yk" addr="9" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="11" 	type="yk" addr="10" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="12" 	type="yk" addr="11"	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="13" 	type="yk" addr="12" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="14" 	type="yk" addr="13" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="15" 	type="yk" addr="14" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="16" 	type="yk" addr="15" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="17" 	type="yk" addr="16" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="18" 	type="yk" addr="17" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="19" 	type="yk" addr="18" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+		<point id="20" 	type="yk" addr="19" 	datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="" 			category="控制参数"/>
+	</device>
+	<enumeration id="1" addr="0">
+		<list var="113">启动</list>
+		<list var="114">加载</list>
+		<list var="115">停机</list>
+		<list var="116">复位</list>
+		<list var="117">仅机侧停机</list>
+		<list var="118">ARM强制复位</list>
+		<list var="119">网侧强制复位</list>
+		<list var="120">机侧强制复位</list>
+		<list var="121">励磁侧强制复位</list>
+		<list var="122">模式设置确认</list>
+		<list var="123">远程本地切换</list>
+		<list var="124">电流转矩输入切换</list>
+		<list var="125">功率曲线激活切换</list>
+		<list var="126">工作模式切换</list>
+		<list var="127">硬件保护激活切换</list>
+		<list var="129">关键故障激活切换</list>
+		<list var="130">励磁激活禁止</list>
+		<list var="131">关键故障复位</list>
+		<list var="132">默认设置</list>
+		<list var="133">故障记录查询+</list>
+		<list var="134">故障记录查询-</list>
+		<list var="135">正常记录查询+</list>
+		<list var="136">正常记录查询-</list>
+		<list var="137">网侧EEPROM参数设置</list>
+		<list var="138">机侧EEPROM参数设置</list>
+		<list var="139">励磁侧EEPROM参数设置</list>
+		<list var="140">系统参数设置</list>
+		<list var="141">系统时间设置</list>
+		<list var="142">网侧调试参数修改</list>
+		<list var="143">机侧调试参数修改</list>
+		<list var="145">励磁侧参数修改</list>
+		<list var="146">变流器序列号设置</list>
+		<list var="147">网侧激活禁止切换</list>
+		<list var="148">机侧激活禁止切换</list>
+		<list var="151">功率曲线参数设置</list>
+		<list var="152">发电电动模式切换</list>
+		<list var="153">LVRT激活禁止切换</list>
+		<list var="154">存储故障复位</list>
+		<list var="155">网侧EEPROM参数查询</list>
+		<list var="156">机侧EEPROM参数查询</list>
+		<list var="159">电机参数默认设置</list>
+		<list var="161">电机参数设置</list>
+		<list var="162">本地带电机网侧参数设置</list>
+		<list var="163">本地带电机机侧参数设置</list>
+		<list var="167">系统参数默认设置</list>
+		<list var="168">Chopper放电</list>
+		<list var="169">Crowbar放电</list>
+		<list var="172">机侧风扇控制切换</list>
+		<list var="173">湿度检测激活禁止切换</list>
+		<list var="174">Crowbar自检激活禁止切换</list>
+	</enumeration>
+</root>

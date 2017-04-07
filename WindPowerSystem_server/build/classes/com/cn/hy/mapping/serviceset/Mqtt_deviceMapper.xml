@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.serviceset.Mqtt_deviceDao">
+
+<resultMap type="Mqtt_device" id="Mqtt_devicemap">
+</resultMap>
+
+<!-- 查询所有 -->
+<select id="selectMqtt_device" resultMap="Mqtt_devicemap"> 
+	SELECT md.id, md.sn,md.create_time,md.run_state,md.NAME,md.device_yd_lx,md.device_lx_mh,md.device_CJ,md.device_xh,md.device_id,wd.name AS device_name
+    FROM mqtt_device md
+    LEFT JOIN windpower_device wd ON md.device_id=wd.id
+    ORDER BY create_time DESC
+</select>
+
+<!-- 新增 -->
+<insert id="insertMqtt_device" parameterType="Mqtt_device">
+	INSERT INTO mqtt_device(
+	             sn,
+	             create_time,
+	             run_state,
+	             name,
+	             device_yd_lx,
+	             device_lx_mh,
+	             device_CJ,
+	             device_xh,
+	             device_id)
+	VALUES (
+	        #{sn},
+	        NOW(),
+	        #{run_state},
+	        #{name},
+	        #{device_yd_lx},
+	        #{device_lx_mh},
+	        #{device_CJ},
+	        #{device_xh},
+	        #{device_id})
+</insert>
+<!-- 通过id查询matt设备集 -->
+<select id="findById" resultMap="Mqtt_devicemap"> 
+	SELECT md.id, md.sn,md.create_time,md.run_state,md.NAME,md.device_yd_lx,md.device_lx_mh,md.device_CJ,md.device_xh,md.device_id
+    FROM mqtt_device md
+    where md.id=#{id}
+</select>
+<!-- 修改 -->
+<update id="editMqtt_device" parameterType="Mqtt_device">
+	UPDATE mqtt_device SET sn=#{sn},name=#{name},device_lx_mh=#{device_lx_mh},
+	device_CJ=#{device_CJ},device_xh=#{device_xh},device_id=#{device_id}
+	WHERE id=#{id}
+</update>
+<!-- 删除 -->
+<delete id="deleteMqtt_device" parameterType="Mqtt_device">
+	DELETE FROM mqtt_device where id=#{id}
+</delete>
+</mapper>

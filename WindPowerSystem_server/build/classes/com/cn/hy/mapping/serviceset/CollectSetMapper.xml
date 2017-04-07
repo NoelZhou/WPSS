@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.serviceset.CollectSetDao">
+	<!-- 采集频率设置 -->
+	<resultMap type="CollectTimes" id="collecttimesmap">
+		<id column="id" property="id" />
+		<result column="real_time" property="real_time" />
+		<result column="history" property="history" />
+		<result column="create_time" property="create_time" />
+		<result column="create_user" property="create_user" />
+		<result column="update_time" property="update_time" />
+		<result column="update_user" property="update_user" />
+	</resultMap>
+	
+	<select id="getCollectTimes" resultType="CollectTimes">
+		select id,real_time,history,create_time,create_user,update_time,update_user
+		from windpower_dataacqtime
+	</select>
+	
+	<insert id="saveCollectTimes" parameterType="CollectTimes">
+		insert into windpower_dataacqtime
+		(real_time,history,create_time,create_user,update_time,update_user)
+		values
+		(#{real_time},#{history},#{create_time},#{create_user},#{update_time},#{update_user})
+	</insert>
+	
+	<update id="updateCollectTimes" parameterType="CollectTimes">
+		update windpower_dataacqtime 
+		set 
+			real_time = #{real_time},
+			history = #{history},
+			create_time = #{create_time},
+			create_user = #{create_user},
+			update_time = #{update_time},
+			update_user = #{update_user}
+		where id = #{id}
+	</update>
+	<!-- 设备类型管理 -->
+	<resultMap type="DeviceType" id="devicetypemap">
+		<id column="id" property="id" />
+		<result column="modbus_type" property="modbus_type" />
+		<result column="name" property="name" />
+		<result column="description" property="description" />
+		<result column="create_time" property="create_time" />
+		<result column="update_time" property="update_time" />
+		<result column="create_user" property="create_user" />
+		<result column="update_user" property="update_user" />
+	</resultMap>
+	
+	<select id="listDeviceType" resultMap="devicetypemap">
+		select id,modbus_type,name,description 
+		from windpower_devicetype
+	</select>
+	
+	<insert id="saveDeviceType" parameterType="DeviceType">
+		insert into windpower_devicetype
+		(modbus_type,name,description,create_time,update_time,create_user,update_user)
+		values
+		(#{modbus_type},#{name},#{description},#{create_time},#{update_time},#{create_user},
+		#{update_user})
+	</insert>
+	
+	<update id="updateDeviceType" parameterType="DeviceType">
+		update windpower_devicetype 
+		set 
+			modbus_type = #{modbus_type},
+			name = #{name},
+			description = #{description},
+			create_time = #{create_time},
+			update_time = #{update_time},
+			create_user = #{create_user},
+			update_user = #{update_user}
+		where id = #{id}
+	</update>
+	
+	<delete id="deleteDeviceType" parameterType="DeviceType">
+		delete from windpower_devicetype
+		where id = #{id}
+	</delete>
+	
+	<select id="getDeviceTypeById" resultType="DeviceType">
+		select id,modbus_type,name,description,create_time,update_time,create_user,update_user 
+		from windpower_devicetype 
+		where id = #{id}		
+	</select>
+	
+	<!-- 设备管理修改之前 -->
+	<select id="getDeviceById" resultType="Device">
+		select id,device_type_id,sn,decription,avatar,create_time,update_time,create_user,update_user,name,run_state 
+		FROM windpower_device
+		where id=#{id}		
+	</select>
+	
+	<!-- 协议类型 -->
+	<resultMap type="ModbustcpType" id="modbustcptypemap">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="create_time" property="create_time" />
+		<result column="create_user" property="create_user" />
+		<result column="update_time" property="update_time" />
+		<result column="update_user" property="update_user" />
+	</resultMap>
+	
+	<select id="listModbustcpType" resultMap="modbustcptypemap">
+		select id,name 
+		from modbustcp_type ORDER BY id
+	</select>
+	
+	<!-- 通讯设置-->
+	<resultMap type="DeviceInfo" id="deviceinfomap">
+		<id column="id" property="id" />
+		<result column="device_id" property="device_id" />
+		<result column="d_type" property="d_type" />
+		<result column="ip" property="ip" />
+		<result column="port" property="port" />
+		<result column="create_time" property="create_time" />
+		<result column="update_time" property="update_time" />
+		<result column="create_user" property="create_user" />
+		<result column="update_user" property="update_user" />
+	</resultMap>
+	
+	<select id="listDeviceInfo" resultMap="deviceinfomap">
+		select wdi.id,wdi.device_id,wdi.d_type,wdi.ip,wdi.port,wd.name
+		from windpower_deviceinfo wdi
+		LEFT JOIN windpower_device wd on wd.id= wdi.device_id
+	</select>
+	
+	<insert id="saveDeviceInfo" parameterType="DeviceInfo">
+		insert into windpower_deviceinfo
+		(device_id,d_type,dsp_type,ip,port,create_time,update_time,create_user,update_user)
+		values
+		(#{device_id},#{d_type},#{dsp_type},#{ip},#{port},#{create_time},#{update_time},#{create_user},
+		#{update_user})
+	</insert>
+	
+	<update id="updateDeviceInfo" parameterType="DeviceInfo">
+		update windpower_deviceinfo 
+		set 
+			device_id = #{device_id},
+			d_type = #{d_type},
+			ip = #{ip},
+			port = #{port},
+			create_time = #{create_time},
+			update_time = #{update_time},
+			create_user = #{create_user},
+			update_user = #{update_user}
+		where id = #{id}
+	</update>
+	
+	<delete id="deleteDeviceInfo" parameterType="DeviceInfo">
+		delete from windpower_deviceinfo
+		where id = #{id}
+	</delete>
+	
+	<select id="getDeviceInfo" resultType="DeviceInfo">
+		select id,device_id,d_type,ip,port,create_time,update_time,create_user,update_user
+		from windpower_deviceinfo 
+		where id = #{id}		
+	</select>
+	
+		<select id="getDeviceInfoBydid" resultType="DeviceInfo">
+		select id,device_id,d_type,ip,port,create_time,update_time,create_user,update_user
+		from windpower_deviceinfo 
+		where device_id = #{device_id}		 and d_type='arm'
+	</select>
+	
+
+	<select id="getDeviceInfoByDevice_id" resultType="DeviceInfo">
+		select id,device_id,d_type,dsp_type,ip,port,create_time,update_time,create_user,update_user
+		from windpower_deviceinfo 
+		where device_id =#{device_id}
+	</select>
+	
+	<select id="findByIp" resultType="DeviceInfo">
+		select id,device_id,d_type,dsp_type,ip,port,create_time,update_time,create_user,update_user
+		from windpower_deviceinfo 
+		where ip =#{ip}
+	</select>
+	
+	<select id="findByIdAndIp" resultType="DeviceInfo">
+		select id,device_id,d_type,dsp_type,ip,port,create_time,update_time,create_user,update_user
+		from windpower_deviceinfo 
+		where id=#{id} and ip =#{ip}  
+	</select>
+</mapper>

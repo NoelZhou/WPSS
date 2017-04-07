@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="变流器时钟设置">
+		<point id="151" type="yt" addr="13178" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="3000" 	cof="1" unit="" remark="" sysremark="" name="年设置" category="变流器时钟设置"/>
+		<point id="152" type="yt" addr="13179" datalen="2" datatype="S16" datalimitmin="1" datalimitmax="12" 	cof="1" unit="" remark="" sysremark="" name="月设置" category="变流器时钟设置"/>
+		<point id="153" type="yt" addr="13180" datalen="2" datatype="S16" datalimitmin="1" datalimitmax="31" 	cof="1" unit="" remark="" sysremark="" name="日设置" category="变流器时钟设置"/>
+		<point id="154" type="yt" addr="13181" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="24" 	cof="1" unit="" remark="" sysremark="" name="时设置" category="变流器时钟设置"/>
+		<point id="155" type="yt" addr="13182" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="60" 	cof="1" unit="" remark="" sysremark="" name="分设置" category="变流器时钟设置"/>
+		<point id="156" type="yt" addr="13183" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="60" 	cof="1" unit="" remark="" sysremark="" name="秒设置" category="变流器时钟设置"/>
+	</device>
+</root>

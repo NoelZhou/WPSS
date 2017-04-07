@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="机侧DSP设置参数查询1">
+		<point id="393" type="yt" addr="13362" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="编号" 			category="机侧DSP设置参数查询1"/>
+		<point id="394" type="yt" addr="13363" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电压中性点补偿" 	category="机侧DSP设置参数查询1"/>
+		<point id="395" type="yt" addr="13364" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="载波模式" 			category="机侧DSP设置参数查询1"/>
+		<point id="396" type="yt" addr="13365" datalen="2" datatype="S16"  cof="1"   unit="V"  remark="" sysremark="" name="直流过压保护" 		category="机侧DSP设置参数查询1"/>
+		<point id="397" type="yt" addr="13366" datalen="2" datatype="S16"  cof="1"   unit="V"  remark="" sysremark="" name="母线偏差保护" 		category="机侧DSP设置参数查询1"/>
+		<point id="398" type="yt" addr="13367" datalen="2" datatype="S16"  cof="1"   unit="A"  remark="" sysremark="" name="峰值过流保护" 		category="机侧DSP设置参数查询1"/>
+		<point id="399" type="yt" addr="13368" datalen="2" datatype="S16"  cof="1"   unit="A"  remark="" sysremark="" name="电流变化率保护" 	category="机侧DSP设置参数查询1"/>
+		<point id="400" type="yt" addr="13369" datalen="2" datatype="S16"  cof="1"   unit="A"  remark="" sysremark="" name="对地漏电流保护" 	category="机侧DSP设置参数查询1"/>
+		<point id="401" type="yt" addr="13370" datalen="2" datatype="S16"  cof="1"   unit="A"  remark="" sysremark="" name="电流缺相保护" 		category="机侧DSP设置参数查询1"/>
+		<point id="402" type="yt" addr="13371" datalen="2" datatype="S16"  cof="1" unit="us" remark="*200" sysremark="" name="撬棒触发超时" 		category="机侧DSP设置参数查询1"/>
+		<point id="403" type="yt" addr="13372" datalen="2" datatype="S16"  cof="1"   unit="A"  remark="" sysremark="" name="滤波电流下限" 		category="机侧DSP设置参数查询1"/>
+		<point id="404" type="yt" addr="13373" datalen="2" datatype="S16"  cof="1"   unit="A"  remark="" sysremark="" name="滤波电流上限" 		category="机侧DSP设置参数查询1"/>
+		<point id="405" type="yt" addr="13374" datalen="2" datatype="S16"  cof="1"   unit="A"  remark="" sysremark="" name="并联电流偏差" 		category="机侧DSP设置参数查询1"/>
+		<point id="406" type="yt" addr="13375" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="相位检测使能" 		category="机侧DSP设置参数查询1"/>
+		<point id="407" type="yt" addr="13376" datalen="2" datatype="S16"  cof="1"   unit="U"  remark="" sysremark="" name="当前电网电压" 		category="机侧DSP设置参数查询1"/>
+		<point id="408" type="yt" addr="13377" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="主从机设置位" 		category="机侧DSP设置参数查询1"/>
+		<point id="409" type="yt" addr="13378" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="LVRT使能" 			category="机侧DSP设置参数查询1"/>
+		<point id="410" type="yt" addr="13379" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="" 				category="机侧DSP设置参数查询1"/>
+		<point id="411" type="yt" addr="13380" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="" 				category="机侧DSP设置参数查询1"/>
+		<point id="412" type="yt" addr="13381" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="" 				category="机侧DSP设置参数查询1"/>
+		<point id="413" type="yt" addr="13382" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电网Uab中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="414" type="yt" addr="13383" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电网Ubc中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="415" type="yt" addr="13384" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电网Ia1中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="416" type="yt" addr="13385" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电网Ib1中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="417" type="yt" addr="13386" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电网Ic1中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="418" type="yt" addr="13387" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电网Ia2中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="419" type="yt" addr="13388" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电网Ib2中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="420" type="yt" addr="13389" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="电网Ic2中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="421" type="yt" addr="13390" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="Upz中心点" 		category="机侧DSP设置参数查询1"/>
+		<point id="422" type="yt" addr="13391" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="Uzn中心点" 		category="机侧DSP设置参数查询1"/>
+		<point id="423" type="yt" addr="13392" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="滤波Ia中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="424" type="yt" addr="13393" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="滤波Ib中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="425" type="yt" addr="13394" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="滤波Ic中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="426" type="yt" addr="13395" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="Uab电容中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="427" type="yt" addr="13396" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="Ubc电容中性点" 	category="机侧DSP设置参数查询1"/>
+		<point id="428" type="yt" addr="13397" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="" 				category="机侧DSP设置参数查询1"/>
+		<point id="429" type="yt" addr="13398" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="" 				category="机侧DSP设置参数查询1"/>
+		<point id="430" type="yt" addr="13399" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="" 				category="机侧DSP设置参数查询1"/>
+		<point id="431" type="yt" addr="13400" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name="" 				category="机侧DSP设置参数查询1"/>
+		<point id="432" type="yt" addr="13401" datalen="2" datatype="S16"  cof="1"   unit=""   remark="" sysremark="" name=""		 		category="机侧DSP设置参数查询1"/>
+	</device>
+</root>

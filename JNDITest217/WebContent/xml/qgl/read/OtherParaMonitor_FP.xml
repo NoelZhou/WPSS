@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<root>
+	<device machinetype="全功率变流器" name="其他监控参数">
+		<point id="201" type="yc" addr="25"  datalen="2" datatype="S16" cof="1"  	unit="" 	remark="" sysremark="" name="LVRT总次数" 	category="其他监控参数"/>
+		<point id="202" type="yc" addr="26"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" sysremark="" name="网侧窄脉冲次数" 	category="其他监控参数"/>
+		<point id="203" type="yc" addr="27"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" sysremark="" name="机侧窄脉冲次数"  	category="其他监控参数"/>
+		<point id="204" type="yc" addr="28"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" sysremark="" name="湿度器动作次数"  	category="其他监控参数"/>
+		<point id="205" type="yc" addr="50"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" sysremark="" name="ARM软件版本"  	category="其他监控参数"/>
+		<point id="206" type="yc" addr="59"  datalen="2" datatype="S16" cof="1" 	unit="%RH" 	remark="" sysremark="" name="网侧功率柜湿度"  	category="其他监控参数"/>
+		<point id="207" type="yc" addr="60"  datalen="2" datatype="S16" cof="1" 	unit="%RH" 	remark="" sysremark="" name="网侧功率柜湿度"  	category="其他监控参数"/>
+		<point id="208" type="yc" addr="53"  datalen="2" datatype="S16" cof="100" 	unit="Bar" 	remark="" sysremark="" name="泵出水压力"  	category="其他监控参数"/>
+		<point id="209" type="yc" addr="54"  datalen="2" datatype="S16" cof="100" 	unit="Bar" 	remark="" sysremark="" name="泵回水压力"  	category="其他监控参数"/>
+		<point id="210" type="yc" addr="55"  datalen="2" datatype="S16" cof="1" 	unit="L/min" 	remark="" sysremark="" name="流量" 		category="其他监控参数"/>
+		<point id="211" type="yc" addr="64"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" sysremark="" name="备用" 		category="其他监控参数"/>
+		<point id="212" type="yc" addr="65"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" sysremark="" name="备用"  		category="其他监控参数"/>
+		<point id="213" type="yc" addr="66"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" sysremark="" name="备用"  		category="其他监控参数"/>
+		<point id="214" type="yc" addr="67"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" sysremark="" name="备用"  		category="其他监控参数"/>
+	</device>  
+</root>

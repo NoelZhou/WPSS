@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.system.UserDao">
+
+	<select id="selectUser" resultMap="usermap">
+		select * from system_user
+		where employeeid=#{employeeId} and passwd=#{passwd}
+	</select>
+	<select id="selectUserById" resultMap="usermap">
+		select a.*,b.role_id
+		from
+		system_user a left join system_user_role b 
+		on a.id = b.user_id 
+		where  a.id=#{id}
+	</select>
+   <select id="selectAllUser" resultMap="usermap">
+SELECT su.id,su.name,sur.role_id,su.employeeid,su.employeename,su.state,sr.role_name,su.telephone
+        FROM system_user su
+      LEFT JOIN system_user_role sur on su.id=sur.user_id       
+       LEFT JOIN system_role sr on sur.role_id=sr.id
+	</select>
+	<resultMap type="User" id="usermap">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="passwd" property="passwd" />
+		<result column="employeeid" property="employeeId" />
+		<result column="employeename" property="employeeName" />
+		<result column="register_date" property="registerDate" />
+		<result column="role_id" property="roleId" />
+		<result column="telephone" property="telephone"/>
+		<result column="state" property="state" />
+		<collection property="menu" ofType="Menu" javaType="java.util.List"
+			select="selectmenubyuserid" column="id">
+		</collection>		
+	</resultMap>
+
+
+	<select id="selectmenubyuserid" resultType="Menu">
+		SELECT
+		rm.menu_id
+		id,rm.read_p read_p,rm.write_p write_p
+		FROM
+		system_user u
+		LEFT JOIN
+		system_user_role ur ON u.id = ur.user_id left join
+		system_role_menu rm
+		on ur.role_id=rm.role_id where u.id=#{id}
+	</select>
+
+	<insert id="insertUser" parameterType="User" useGeneratedKeys="true"
+		keyProperty="id">
+		<selectKey resultType="Integer" keyProperty="id">
+		      SELECT LAST_INSERT_ID()
+		</selectKey>
+		insert into system_user
+		(name,passwd,employeeid,employeename,register_date,telephone,state,loginerrordate)
+		VALUES
+		(#{name},#{passwd},#{employeeId},#{employeeName},now(),#{telephone},#{state},now())
+	</insert>
+	<delete id="deleteUser" parameterType="Integer">
+		delete from system_user
+		where id=#{id}
+	</delete>
+	<update id="updateUser" parameterType="User">
+		update system_user
+			<set>
+			<if test="name!=null and name!=''">
+				name=#{name},
+			</if>
+			<if test="passwd!=null and passwd!=''">
+				passwd=#{passwd},
+			</if>
+			<if test="employeeId!=null and employeeId!=''">
+				employeeId=#{employeeId},
+			</if>
+			<if test="employeeName!=null and employeeName!=''">
+				employeeName=#{employeeName},
+			</if>
+			<if test="telephone!=null and telephone!=''">
+				telephone=#{telephone},
+			</if>
+			state=#{state}
+			</set>
+			where id=#{id}
+	</update>
+	<update id="updateState" parameterType="User">
+	   update system_user
+	   set
+	   state=#{state}
+	   where id=#{id}
+	</update>
+	<update id="updatepass" parameterType="User">
+	   update system_user
+	   set
+	   passwd=#{passwd}
+	   where id=#{id}
+	</update>
+	<update id="updateUserTimes" parameterType="User">
+	   update system_user
+	   set
+	   		<if test="logintimes!=null">
+	   			logintimes=#{logintimes},
+	   		</if>
+		  	<if test="loginerrordate!=null and loginerrordate!='' ">
+		  		loginerrordate=#{loginerrordate},
+		  	</if>
+	   		<if test="state!=null">
+	   			state=#{state},
+	   		</if>
+	   		id=id
+	   where id=#{id}
+	</update>
+	<update id="updateStateTime" parameterType="User">
+	   update system_user
+	   set
+	   state=#{state}
+	   where id=#{id}
+	</update>
+	<insert id="insertRole" parameterType="User">
+		insert into system_user_role
+		(user_id,role_id)
+		VALUES
+		(#{useId},#{roleId})
+		where id=#{id}
+	</insert>
+	<select id="getUserByEmployeeId" resultType="User">
+		select a.id,a.state,b.role_id as roleId,a.logintimes,a.name,a.loginerrordate
+		from system_user a left join system_user_role b 
+		on a.id = b.user_id 
+		where employeeid=#{employeeId}
+	</select>
+	
+	<select id="findByIdAndEmpID" resultMap="usermap">
+		select id,name,passwd,employeeid,employeename,register_date,state,telephone
+		from system_user where id=#{id} and employeeid=#{employeeId}
+	</select>
+	
+</mapper>

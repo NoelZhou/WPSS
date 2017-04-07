@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="双馈变流器" name="单机调试系统信息">
+		<point id="1" type="yc" addr="30"  datalen="2" datatype="S32" cof="10" 	unit="kW.h" 	remark="" 			sysremark="" name="总发电量"  			category="其他参数"/>
+		<point id="2" type="yc" addr="491" datalen="2" datatype="S16" cof="1" 	unit="kVar" 	remark="" 			sysremark="" name="并网无功功率"  		category="其他参数"/>
+		<point id="3" type="yc" addr="520" datalen="2" datatype="S16" cof="10000" 	unit="" 		remark="" 			sysremark="" name="功率因素" 			category="其他参数"/>
+		<point id="4" type="yc" addr="250" datalen="2" datatype="S16" cof="1" 	unit="kW" 		remark="" 			sysremark="" name="定子有功功率"  		category="其他参数"/>
+		<point id="5" type="yc" addr="251" datalen="2" datatype="S16" cof="1" 	unit="kVar" 	remark="" 			sysremark="" name="定子无功功率"  		category="其他参数"/>
+		<point id="6" type="yc" addr="56"  datalen="2" datatype="S16" cof="1" 	unit="" 		remark="" 			sysremark="" name="断路器动作次数"  	category="其他参数"/>
+		
+		<point id="7" type="yc" addr="525" datalen="2" datatype="S16" cof="100" 	unit="℃" 	remark="" 			sysremark="" name="网侧模块最高温度"  	category="中间变量监控"/>
+		<point id="8" type="yc" addr="526" datalen="2" datatype="S16" cof="100" 	unit="℃" 	remark="" 			sysremark="" name="机侧模块最高温度"  	category="中间变量监控"/>
+		<point id="9" type="yc" addr="522" datalen="2" datatype="S16" cof="100" 	unit="℃" 	remark="" 			sysremark="" name="功率柜温度最大值"  	category="中间变量监控"/>
+		<point id="10" type="yc" addr="527" datalen="2" datatype="S16" cof="100" 	unit="℃" 	remark="" 			sysremark="" name="并网柜温度最大值"  	category="中间变量监控"/>
+		<point id="11" type="yc" addr="523" datalen="2" datatype="S16" cof="100" 	unit="℃" 	remark="" 			sysremark="" name="控制柜前温度"  		category="中间变量监控"/>
+		<point id="12" type="yc" addr="524" datalen="2" datatype="S16" cof="100" 	unit="℃" 	remark="" 			sysremark="" name="控制柜后温度"  		category="中间变量监控"/>
+	</device>
+</root>

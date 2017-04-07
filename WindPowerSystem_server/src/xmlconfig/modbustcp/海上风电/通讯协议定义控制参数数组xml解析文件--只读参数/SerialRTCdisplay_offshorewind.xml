@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="变流器时钟显示">
+		<point id="241" type="yc" addr="13184" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="年显示" category="变流器时钟显示"/>
+		<point id="242" type="yc" addr="13185" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="月显示" category="变流器时钟显示"/>
+		<point id="243" type="yc" addr="13186" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="日显示" category="变流器时钟显示"/>
+		<point id="244" type="yc" addr="13187" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="时显示" category="变流器时钟显示"/>
+		<point id="245" type="yc" addr="13188" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="分显示" category="变流器时钟显示"/>
+		<point id="246" type="yc" addr="13189" datalen="2" datatype="U16"  cof="1" unit="" remark="" sysremark="" name="秒显示" category="变流器时钟显示"/>
+	</device>
+</root>

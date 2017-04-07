@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="全功率变流器" name="变流器序列号">
+		<point id="331" type="yt" addr="678" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" cof="1" unit="" remark="" sysremark="" name="序列号1" category="变流器序列号"/>
+		<point id="332" type="yt" addr="679" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" cof="1" unit="" remark="" sysremark="" name="序列号2" category="变流器序列号"/>
+		<point id="333" type="yt" addr="680" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" cof="1" unit="" remark="" sysremark="" name="序列号3" category="变流器序列号"/>
+		<point id="334" type="yt" addr="681" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" cof="1" unit="" remark="" sysremark="" name="序列号4" category="变流器序列号"/>
+	</device>
+</root>

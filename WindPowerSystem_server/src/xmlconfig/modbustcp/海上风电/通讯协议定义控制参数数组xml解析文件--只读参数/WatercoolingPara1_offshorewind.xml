@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="水冷系统温度数据1">
+		<point id="557" type="yc" addr="13526" datalen="2" datatype="S16"  cof="1" 	unit="L/min" 	remark="" sysremark="" 	name="水流量" 		category="水冷系统温度数据1"/>
+		<point id="558" type="yc" addr="13527" datalen="2" datatype="S16"  cof="100" 	unit="Par" 	remark="" sysremark="" 	name="入水口压力" 	category="水冷系统温度数据1"/>
+		<point id="559" type="yc" addr="13528" datalen="2" datatype="S16"  cof="100" 	unit="Par" 	remark="" sysremark="" 	name="出水口压力" 	category="水冷系统温度数据1"/>
+		<point id="560" type="yc" addr="13529" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="入水口温度" 	category="水冷系统温度数据1"/>
+		<point id="561" type="yc" addr="13530" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="出水口温度" 	category="水冷系统温度数据1"/>
+		<point id="562" type="yc" addr="13531" datalen="2" datatype="S16"  cof="10" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="563" type="yc" addr="13532" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="网侧1A相温度" category="水冷系统温度数据1"/>
+		<point id="564" type="yc" addr="13533" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="网侧1B相温度" category="水冷系统温度数据1"/>
+		<point id="565" type="yc" addr="13534" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="网侧1C相温度" category="水冷系统温度数据1"/>
+		<point id="566" type="yc" addr="13535" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="网侧2A相温度" category="水冷系统温度数据1"/>
+		<point id="567" type="yc" addr="13536" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="网侧2B相温度" category="水冷系统温度数据1"/>
+		<point id="568" type="yc" addr="13537" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="网侧2C相温度" category="水冷系统温度数据1"/>
+		<point id="569" type="yc" addr="13538" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="570" type="yc" addr="13539" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="571" type="yc" addr="13540" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="572" type="yc" addr="13541" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="机侧1A相温度" category="水冷系统温度数据1"/>
+		<point id="573" type="yc" addr="13542" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="机侧1B相温度" category="水冷系统温度数据1"/>
+		<point id="574" type="yc" addr="13543" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="机侧1C相温度" category="水冷系统温度数据1"/>
+		<point id="575" type="yc" addr="13544" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="机侧2A相温度" category="水冷系统温度数据1"/>
+		<point id="576" type="yc" addr="13545" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="机侧2B相温度" category="水冷系统温度数据1"/>
+		<point id="577" type="yc" addr="13546" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="机侧2C相温度" category="水冷系统温度数据1"/>
+		<point id="578" type="yc" addr="13547" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="579" type="yc" addr="13548" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="580" type="yc" addr="13549" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="581" type="yc" addr="13550" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="582" type="yc" addr="13551" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="583" type="yc" addr="13552" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="584" type="yc" addr="13553" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="功率柜1温度" 	category="水冷系统温度数据1"/>
+		<point id="585" type="yc" addr="13554" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="功率柜2温度" 	category="水冷系统温度数据1"/>
+		<point id="586" type="yc" addr="13555" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="587" type="yc" addr="13556" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="滤波柜温度" 	category="水冷系统温度数据1"/>
+		<point id="588" type="yc" addr="13557" datalen="2" datatype="S16"  cof="10" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="589" type="yc" addr="13558" datalen="2" datatype="S16"  cof="10" 	unit="℃" 	remark="" sysremark="" 	name="控制柜环境温度" 	category="水冷系统温度数据1"/>
+		<point id="590" type="yc" addr="13559" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+		<point id="591" type="yc" addr="13560" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="水冷系统温度数据1"/>
+	</device>
+</root>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="全功率变流器" name="单机调试系统信息">
+		<point id="1" type="yc" addr="30"  datalen="2" datatype="S32" cof="1" 	unit="kW.h" remark="" sysremark="" name="总发电量"  	category="其他参数"/>
+		<point id="2" type="yc" addr="518" datalen="2" datatype="S16" cof="100" 	unit="" 	remark="" sysremark="" name="功率因素"  	category="其他参数"/>
+		<point id="3" type="yc" addr="59"  datalen="2" datatype="S16" cof="1" 	unit="%RH" 	remark="" sysremark="" name="网侧功率柜湿度" category="其他参数"/>
+		<point id="4" type="yc" addr="60"  datalen="2" datatype="S16" cof="1" 	unit="%RH" 	remark="" sysremark="" name="机侧功率柜湿度" category="其他参数"/>
+		<point id="5" type="yc" addr="53"  datalen="2" datatype="S16" cof="100" unit="Bar" 	remark="" sysremark="" name="泵出水压力"  	category="其他参数"/>
+		<point id="6" type="yc" addr="54"  datalen="2" datatype="S16" cof="100" unit="Bar" 	remark="" sysremark="" name="泵回水压力"  	category="其他参数"/>
+		<point id="7" type="yc" addr="55"  datalen="2" datatype="S16" cof="1" 	unit="L/min" remark="" sysremark="" name="流量" 		category="其他参数"/>
+		
+		<point id="8" type="yc" addr="46"  datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜环境温度" 	category="温度参数"/>
+		<point id="9" type="yc" addr="47"  datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜水温度"  	category="温度参数"/>
+		<point id="10" type="yc" addr="48"  datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜环境温度"  	category="温度参数"/>
+<!-- 		<point id="11" type="yc" addr="463" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="控制柜温度"  	category="温度参数"/>
+ -->		<point id="12" type="yc" addr="464" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="电抗柜温度"  	category="温度参数"/>
+		<point id="13" type="yc" addr="465" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="并网柜温度"  	category="温度参数"/>	
+	</device>
+</root>

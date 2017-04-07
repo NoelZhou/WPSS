@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.system.RoleDao">
+	
+	<resultMap type="Role" id="rolemap">
+		<id column="id" property="id" />
+		<id column="id" property="roleId" />
+		<result column="role_name" property="role_name" />
+		<result column="create_user" property="create_user" />
+		<result column="create_date" property="create_date" />
+		<result column="describes" property="describes" />
+	</resultMap>
+	
+	<!-- 查询所有 -->
+	<select id="selectRole" resultMap="rolemap">
+		SELECT id,role_name,create_user,create_date,describes from system_role 
+	</select>
+	<!-- 根据id查询所有 -->
+	<select id="findByRoleId" resultMap="rolemap">
+		SELECT id,role_name,create_user,create_date,describes from system_role 
+		where id=#{id}
+	</select>
+	
+	<!-- 新增之后-->
+	<insert id="insetrRole" parameterType="Role">
+		<selectKey resultType="Integer" keyProperty="id">
+		      SELECT LAST_INSERT_ID()
+		</selectKey>
+		insert into system_role (role_name,create_user,create_date,describes)
+		values(#{role_name},#{create_user},NOW(),#{describes})
+	</insert>
+	<!-- 删除 -->
+	<delete id="deleteRole" parameterType="Role">
+         delete from system_role where id=#{id}
+    </delete> 
+    <!-- 修改之后 -->
+    <update id="updateRole" parameterType="Role">
+    	update system_role set role_name=#{role_name},describes=#{describes} where id=#{id}
+    </update>
+</mapper>

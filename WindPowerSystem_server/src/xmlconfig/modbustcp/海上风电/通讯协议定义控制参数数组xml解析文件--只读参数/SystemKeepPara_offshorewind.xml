@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="系统工作模式参数">
+		<point id="1" 	type="yc" addr="12808" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="CRC校验码" 		category="系统工作模式参数"/>
+		<point id="2" 	type="yx" addr="12809" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="工作模式状态字" 		category="系统工作模式参数"/>
+		<point id="3" 	type="yx" addr="12810" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="功能模式状态字" 		category="系统工作模式参数"/>
+		<point id="4" 	type="yx" addr="12811" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="参数给定模式字" 		category="系统工作模式参数"/>
+		<point id="5" 	type="yc" addr="12812" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="撬棒模组使能" 		category="系统工作模式参数"/>
+		<point id="6" 	type="yc" addr="12813" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="系统工作模式参数"/>
+		<point id="7" 	type="yc" addr="12814" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="系统工作模式参数"/>
+		<point id="8" 	type="yc" addr="12815" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="系统工作模式参数"/>
+		<point id="9" 	type="yc" addr="12816" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="系统工作模式参数"/>
+		<point id="10" 	type="yc" addr="12817" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="系统工作模式参数"/>
+	</device>
+	<bitenumeration id="2" addr="12809">
+		<list bit="0" 	var0="" var1="备用">bit0</list>
+		<list bit="1" 	var0="" var1="网侧1使能位激活">bit1</list>
+		<list bit="2" 	var0="" var1="网侧2使能位激活">bit2</list>
+		<list bit="3" 	var0="" var1="机侧1使能位激活">bit3</list>
+		<list bit="4" 	var0="" var1="机侧2使能位激活">bit4</list>
+		<list bit="5" 	var0="" var1="模组1使能激活">bit5</list>
+		<list bit="6" 	var0="" var1="模组2使能激活">bit6</list>
+		<list bit="7" 	var0="" var1="模组3使能激活">bit7</list>
+		<list bit="8" 	var0="" var1="模组4使能激活">bit8</list>
+		<list bit="9" 	var0="" var1="开环模式">bit9</list>
+		<list bit="10" 	var0="" var1="闭环模式">bit10</list>
+		<list bit="11" 	var0="" var1="前馈模式">bit11</list>
+		<list bit="12" 	var0="" var1="整流器模式">bit12</list>
+		<list bit="13" 	var0="" var1="风场模式">bit13</list>
+		<list bit="14" 	var0="" var1="备用">bit14</list>
+		<list bit="15" 	var0="" var1="USB故障保存使能">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="3" addr="12810">
+		<list bit="0" 	var0="保有功" 		var1="保无功">bit0</list>
+		<list bit="1" 	var0="远程" 		var1="本地">bit1</list>
+		<list bit="2" 	var0="功率曲线禁止" 	var1="功率曲线激活">bit2</list>
+		<list bit="3" 	var0="发电状态" 	var1="电动状态">bit3</list>
+		<list bit="4" 	var0="LVRT禁止" 	var1="LVRT激活">bit4</list>
+		<list bit="5" 	var0="关键故障禁止" 	var1="关键故障激活">bit5</list>
+		<list bit="6" 	var0="关键故障保护正常" var1="关键故障保护故障">bit6</list>
+		<list bit="7" 	var0="" var1="">bit7</list>
+		<list bit="8" 	var0="" var1="">bit8</list>
+		<list bit="9" 	var0="" var1="">bit9</list>
+		<list bit="10" 	var0="" var1="">bit10</list>
+		<list bit="11" 	var0="" var1="">bit11</list>
+		<list bit="12" 	var0="" var1="">bit12</list>
+		<list bit="13" 	var0="" var1="">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="4" addr="12811">
+		<list bit="0" 	var0="网侧有功功率输入禁止" 	var1="网侧有功功率输入激活">bit0</list>
+		<list bit="1" 	var0="网侧无功功率输入禁止" 	var1="网侧无功功率输入激活">bit1</list>
+		<list bit="2" 	var0="网侧有功电流输入禁止" 	var1="网侧有功电流输入激活">bit2</list>
+		<list bit="3" 	var0="网侧无功电流输入禁止" 	var1="网侧无功电流输入激活">bit3</list>
+		<list bit="4" 	var0="网侧功率因数输入禁止" 	var1="网侧功率因数输入激活">bit4</list>
+		<list bit="5" 	var0="" 			var1="">bit5</list>
+		<list bit="6" 	var0="" 			var1="">bit6</list>
+		<list bit="7" 	var0="" 			var1="">bit7</list>
+		<list bit="8" 	var0="机侧有功功率输入禁止" 	var1="机侧有功功率输入激活">bit8</list>
+		<list bit="9" 	var0="机侧转矩输入禁止" 	var1="机侧转矩输入激活">bit9</list>
+		<list bit="10" 	var0="机侧有功电流输入禁止" 	var1="机侧有功电流输入激活">bit10</list>
+		<list bit="11" 	var0="机侧无功功率输入禁止 " 	var1="机侧无功功率输入激活">bit11</list>
+		<list bit="12" 	var0="机侧无功电流输入禁止" 	var1="机侧无功电流输入激活">bit12</list>
+		<list bit="13" 	var0="机侧功率因数输入禁止" 	var1="机侧功率因数输入激活">bit13</list>
+		<list bit="14" 	var0="" 			var1="">bit14</list>
+		<list bit="15" 	var0="" 			var1="">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="5" addr="12812">
+		<list bit="0" 	var0="撬棒模组1禁止" 	var1="撬棒模组1激活">bit0</list>
+		<list bit="1" 	var0="撬棒模组2禁止" 	var1="撬棒模组2激活">bit1</list>
+		<list bit="2" 	var0="撬棒模组3禁止" 	var1="撬棒模组3激活">bit2</list>
+		<list bit="3" 	var0="撬棒模组4禁止" 	var1="撬棒模组4激活">bit3</list>
+		<list bit="4" 	var0="" 		var1="">bit4</list>
+		<list bit="5" 	var0="" 		var1="">bit5</list>
+		<list bit="6" 	var0="" 		var1="">bit6</list>
+		<list bit="7" 	var0="" 		var1="">bit7</list>
+		<list bit="8" 	var0="" 		var1="">bit8</list>
+		<list bit="9" 	var0="" 		var1="">bit9</list>
+		<list bit="10" 	var0="" 		var1="">bit10</list>
+		<list bit="11" 	var0=" " 		var1="">bit11</list>
+		<list bit="12" 	var0="" 		var1="">bit12</list>
+		<list bit="13" 	var0="" 		var1="">bit13</list>
+		<list bit="14" 	var0="" 		var1="">bit14</list>
+		<list bit="15" 	var0="" 		var1="">bit15</list>
+	</bitenumeration>
+</root>

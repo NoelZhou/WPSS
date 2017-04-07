@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.serviceset.ErrorWarnSetDao">
+	<!-- 接收邮箱管理 -->
+	<resultMap type="UserEmail" id="useremailmap">
+		<id column="id" property="id" />
+		<result column="user_id" property="user_id" />
+		<result column="emailaddr" property="emailaddr" />
+		<result column="create_time" property="create_time" />
+		<result column="create_user" property="create_user" />
+		<result column="update_time" property="update_time" />
+		<result column="update_user" property="update_user" />
+	</resultMap>
+	
+	<select id="listUserEmail" resultMap="useremailmap">
+		select wpue.id,wpue.user_id,wpue.emailaddr,sy.name,sr.role_name
+		from windpower_useremail wpue
+		LEFT JOIN system_user sy on wpue.user_id=sy.id
+		LEFT JOIN system_user_role sur  on wpue.user_id=sur.user_id
+		LEFT JOIN system_role sr on sur.role_id=sr.id
+	</select>
+	
+	<select id="getUserEmailById" resultType="UserEmail">
+		select id,user_id,emailaddr,create_time,create_user,update_time,update_user 
+		from windpower_useremail where id = #{id}
+	</select>
+	
+	<insert id="saveUserEmail" parameterType="UserEmail">
+		insert into windpower_useremail
+		(user_id,emailaddr,create_time,create_user,update_time,update_user)
+		values
+		(#{user_id},#{emailaddr},#{create_time},#{create_user},#{update_time},#{update_user})
+	</insert>
+	
+	<update id="updateUserEmail" parameterType="UserEmail">
+		update windpower_useremail 
+		set 
+			user_id = #{user_id},
+			emailaddr = #{emailaddr},
+			create_time = #{create_time},
+			create_user = #{create_user},
+			update_time = #{update_time},
+			update_user = #{update_user}
+		where id = #{id}
+	</update>
+	
+	<delete id="deleteUserEmail" parameterType="UserEmail">
+		delete from windpower_useremail
+		where id = #{id}
+	</delete>
+	<!-- 邮箱服务设置 -->
+	<select id="getEmailServer" resultType="EmailServer">
+		select id,serveraddr,emailid,passwd,assgin,create_time,create_user,update_time,update_user 
+		from windpower_emailserver
+	</select>
+	
+	<insert id="saveEmailServer" parameterType="EmailServer">
+		insert into windpower_emailserver
+		(serveraddr,emailid,passwd,assgin,create_time,create_user,update_time,update_user)
+		values
+		(#{serveraddr},#{emailid},#{passwd},#{assgin},#{create_time},#{create_user},#{update_time},
+		#{update_user})
+	</insert>
+	
+	<update id="updateEmailServer" parameterType="EmailServer">
+		update windpower_emailserver 
+		set 
+			serveraddr = #{serveraddr},
+			emailid = #{emailid},
+			passwd = #{passwd},
+			assgin = #{assgin},
+			create_time = #{create_time},
+			create_user = #{create_user},
+			update_time = #{update_time},
+			update_user = #{update_user}
+		where id = #{id}
+	</update>
+	
+</mapper>

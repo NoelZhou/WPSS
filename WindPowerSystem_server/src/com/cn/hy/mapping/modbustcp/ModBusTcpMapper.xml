@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.modbustcp.ModBusTcpDao">
+
+	<select id="getaddrbit" parameterType="ModBusParame" resultType="Integer">
+		select count(*) ct from
+		modbustcp_sk_appparame
+		where addr=#{addr} and
+		modbus_type=#{device_type}
+	</select>
+
+	<select id="getaddrcof" parameterType="ModBusParame" resultType="Integer">
+		select cof from
+		modbustcp_sk_app
+		where addr=#{addr} and
+		modbus_type=#{device_type}  limit 0,1
+	</select>
+	<select id="getaddrvar" parameterType="ModBusParame" resultType="Integer">
+		select count(*) from
+		modbustcp_sk_iacparame
+		where addr=#{addr} and
+		modbus_type=#{device_type}
+	</select>
+	<select id="getaddrbitlist" parameterType="ModBusParame"
+		resultMap="ModbusBitMap">
+		select * from
+		modbustcp_sk_appparame
+		where addr=#{addr} and
+		modbus_type=#{device_type}
+	</select>
+	<select id="getaddrbitlistbyid" resultMap="ModbusBitMap">
+		select * from
+		modbustcp_sk_appparame
+		where point_id=#{id} and
+		modbus_type=#{device_type}
+	</select>
+	<resultMap type="ModbusBit" id="ModbusBitMap">
+		<id column="id" property="id" />
+		<result column="bit_id" property="bit_id"></result>
+		<result column="var1" property="name"></result>
+		<result column="addr" property="addr"></result>
+		<result column="var0" property="var0"></result>
+	</resultMap>
+	<select id="getaddvarvalue" parameterType="ModBusParame"
+		resultType="String">
+		select name from
+		modbustcp_sk_iacparame
+		where addr=#{addr}
+		and var=#{shortvalue} and modbus_type=#{device_type}
+	</select>
+	<select id="getvarbyid" parameterType="ModBusParame" resultType="String">
+		select name from
+		modbustcp_sk_iacparame
+		where point_id=#{point_id} and
+		var=#{shortvalue} and modbus_type=#{device_type}
+	</select>
+
+	<select id="getaddrarrarytype" resultType="Integer">
+		select array_type from
+		modbustcp_sk_app
+		where addr=#{addr} 
+		and modbus_type=#{device_type} 
+	</select>
+</mapper>

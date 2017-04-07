@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="全功率变流器" name="温度监控参数">
+		<point id="161" type="yx" addr="42"  datalen="2" datatype="U16" cof="1" unit="" remark="" sysremark="Hex" name="水控系统状态字" 	category="温度监控参数"/>
+		<point id="162" type="yc" addr="46"  datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜环境温度" 		category="温度监控参数"/>
+		<point id="163" type="yc" addr="47"  datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜水温度"  	category="温度监控参数"/>
+		<point id="164" type="yc" addr="48"  datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜环境温度"  		category="温度监控参数"/>
+		<point id="165" type="yc" addr="54"  datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="备用"  			category="温度监控参数"/>
+		<point id="166" type="yc" addr="466" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜A相内侧温度"  	category="温度监控参数"/>
+		<point id="167" type="yc" addr="467" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜A相外侧温度"  	category="温度监控参数"/>
+		<point id="168" type="yc" addr="468" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜B相内侧温度"  	category="温度监控参数"/>
+		<point id="169" type="yc" addr="469" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜B相外侧温度"  	category="温度监控参数"/>
+		<point id="170" type="yc" addr="470" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜C相内侧温度"  	category="温度监控参数"/>
+		<point id="171" type="yc" addr="471" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜C相外侧温度" 	category="温度监控参数"/>
+		<point id="172" type="yc" addr="472" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜U相内侧温度" 	category="温度监控参数"/>
+		<point id="173" type="yc" addr="473" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜U相外侧温度"  	category="温度监控参数"/>
+		<point id="174" type="yc" addr="474" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜V相内侧温度"  	category="温度监控参数"/>
+		<point id="175" type="yc" addr="475" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜V相外侧温度"  	category="温度监控参数"/>
+		<point id="176" type="yc" addr="476" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜W相内侧温度"  	category="温度监控参数"/>
+		<point id="177" type="yc" addr="477" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="主柜W相外侧温度"  	category="温度监控参数"/>
+		<point id="178" type="yc" addr="478" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜A相内侧温度"  	category="温度监控参数"/>
+		<point id="179" type="yc" addr="479" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜#A相外侧温度"  	category="温度监控参数"/>
+		<point id="180" type="yc" addr="480" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜B相内侧温度"  	category="温度监控参数"/>
+		<point id="181" type="yc" addr="481" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜B相外侧温度"  	category="温度监控参数"/>
+		<point id="182" type="yc" addr="482" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜C相内侧温度"  	category="温度监控参数"/>
+		<point id="183" type="yc" addr="483" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜C相外侧温度"  	category="温度监控参数"/>
+		<point id="184" type="yc" addr="484" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜U相内侧温度"  	category="温度监控参数"/>
+		<point id="185" type="yc" addr="485" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜U相外侧温度"  	category="温度监控参数"/>
+		<point id="186" type="yc" addr="486" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜V相内侧温度"  	category="温度监控参数"/>
+		<point id="187" type="yc" addr="487" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜V相外侧温度"  	category="温度监控参数"/>
+		<point id="188" type="yc" addr="488" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜W相内侧温度"  	category="温度监控参数"/>
+		<point id="189" type="yc" addr="489" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="从柜W相外侧温度"  	category="温度监控参数"/>
+		<point id="190" type="yc" addr="462" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="0度校正温度"  	category="温度监控参数"/>
+		<point id="191" type="yc" addr="463" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="控制柜温度"  	category="温度监控参数"/>
+		<point id="192" type="yc" addr="464" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="电抗柜温度"  		category="温度监控参数"/>
+		<point id="193" type="yc" addr="465" datalen="2" datatype="S16" cof="10" unit="℃" remark="" sysremark="" name="并网柜温度"  		category="温度监控参数"/>	
+	</device>
+	<bitenumeration id="161"	addr="42">
+    		<list bit="0"  var0=""  var1="内部风扇启动状态">bit0</list>
+    		<list bit="1"  var0=""  var1="流量低">bit1</list>
+    		<list bit="2"  var0=""  var1="水加热请求">bit2</list>
+    		<list bit="3"  var0=""  var1="水冷远程/本地">bit3</list>
+    		<list bit="4"  var0=""  var1="低温水温状态">bit4</list>
+    		<list bit="5"  var0=""  var1="泵启停状态">bit5</list>
+    		<list bit="6"  var0=""  var1="过温水温状态">bit6</list>
+    		<list bit="7"  var0=""  var1="外循环">bit7</list>
+    		<list bit="8"  var0=""  var1="内循环">bit8</list>
+    		<list bit="9"  var0=""  var1="外部水冷风扇1启动状态">bit9</list>
+    		<list bit="10" var0=""  var1="外部水冷风扇2启动状态">bit10</list>
+    		<list bit="11" var0=""  var1="主柜湿度启动状态">bit11</list>
+		<list bit="12" var0=""  var1="水加热过热">bit12</list>
+    		<list bit="13" var0=""  var1="泵启停命令">bit13</list>
+		<list bit="14" var0=""  var1="压力高/低">bit14</list>
+    		<list bit="15" var0=""  var1="压力差">bit15</list>
+  	</bitenumeration>  
+</root>

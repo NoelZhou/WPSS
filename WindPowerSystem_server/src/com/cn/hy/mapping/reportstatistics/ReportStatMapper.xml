@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.reportstatistics.ReportStatDao">
+	<!-- 获取风机列-->
+	<resultMap type="RowDevice" id="rowdevicemap">
+		<result column="device_name" property="device_name" />
+	</resultMap>
+	
+	<select id="listRowDevice" resultMap="rowdevicemap" parameterType="RowDevice">
+		select device_name 
+		from windpower_errordataparse 
+		where error_type in (${error_types}) and ${date_area_sql}
+		GROUP BY device_name
+	</select>
+	
+	<!-- 获取故障列 -->
+	<resultMap type="RowErrorData" id="rowerrordatamap">
+		<result column="error_column" property="error_column" />
+		<result column="error_name" property="error_name" />
+	</resultMap>
+	
+	<select id="listRowErrorData" resultMap="rowerrordatamap" parameterType="RowErrorData">
+		select  error_column,error_name 
+		from windpower_errordataparse 
+		where error_type in (${error_types}) and ${date_area_sql}
+		GROUP BY error_column ,error_name 
+	</select>
+	
+	<select id="getErrorNum" parameterType="RowErrorData" resultType="Integer">
+		select count(*) ct from
+		windpower_errordataparse
+		where device_name = #{device_name} and error_column = #{error_column} 
+		and error_name = #{error_name}
+		and error_type in (${error_types}) and ${date_area_sql}
+	</select>
+	
+	<!-- 获取故障派单 -->
+	<resultMap type="ErrorDataRepair" id="errordatarepairmap">
+		<result column="id" property="id" />
+		<result column="device_name" property="device_name" />
+		<result column="errorname" property="errorname" />
+		<result column="createtime" property="createtime" />
+		<result column="error_column" property="error_column" />
+		<result column="cometime" property="cometime" />
+	</resultMap>
+	<select id="listErrorDataRepair" resultMap="errordatarepairmap">
+		select a.id,a.device_name,b.errorname,a.createtime,a.error_column,a.cometime 
+		from windpower_errordatarepair a left join windpower_errortype b
+		on a.error_type = b.id where a.repair_state = #{repair_state}
+		order by a.createtime desc
+	</select>
+	
+	<select id="getErrorDataRepair" resultType="ErrorDataRepair">
+		select a.id,a.device_name,b.errorname,a.createtime,a.error_column,a.cometime,
+		a.repair_user,a.repair_result,a.repair_state 
+		from windpower_errordatarepair a left join windpower_errortype b on a.error_type = b.id 
+		where a.id = #{id}
+	</select>
+	
+	<update id="updateErrorDataRepair" parameterType="ErrorDataRepair">
+		update windpower_errordatarepair 
+		set 
+			repair_user = #{repair_user},
+			repair_result = #{repair_result},
+			repair_state = #{repair_state}
+		where id = #{id}
+	</update>
+	
+	<!-- 获取运行时数据 -->
+	<resultMap type="FormRunData" id="formrundatamap">
+		<result column="id" property="id" />
+		<result column="dwdy" property="dwdy" />
+		<result column="dl" property="dl" />
+		<result column="pl" property="pl" />
+		<result column="bwyggl" property="bwyggl" />
+		<result column="bwwggl" property="bwwggl" />
+		<result column="fdl" property="fdl" />
+		<result column="djsj" property="djsj" />
+		<result column="bwsj" property="bwsj" />
+		<result column="gzsj" property="gzsj" />
+		<result column="pjlyxss" property="pjlyxss" />
+		<result column="pjfdgl" property="pjfdgl" />
+		<result column="blqwgzlyl" property="blqwgzlyl" />
+		<result column="createtime" property="createtime" />
+		<result column="maxtime" property="maxtime" />
+		<result column="mintime" property="mintime" />
+		<result column="device_name" property="device_name" />
+		<result column="device_id" property="device_id" />
+		<result column="ct" property="ct" />
+	</resultMap>
+	<select id="listFormRunData" resultMap="formrundatamap"
+		parameterType="FormRunData">
+		select t1.name device_name,t.device_id,t.id,dwdy,dl,pl,bwyggl,bwwggl,
+		max(fdl)-min(fdl) fdl,sum(djsj) djsj,sum(bwsj) bwsj,sum(gzsj) gzsj,sum(pjlyxss) pjlyxss,sum(blqwgzlyl) blqwgzlyl,max(createtime) createtime,max(createtime) maxtime,min(createtime) mintime,count(1) ct
+		from windpower_formrundata t
+		,windpower_device t1 
+		WHERE t.device_id=t1.id  and ${time_sql}    group  by device_id 
+		order by device_id desc
+	</select>
+		<select id="getdevicerundata" resultMap="formrundatamap"
+		>
+		select *,1 ct
+		from windpower_formrundata
+		where ${time_sql}  and device_id =#{device_id} 
+		order by createtime desc limit 0,1
+	</select>
+	
+</mapper>

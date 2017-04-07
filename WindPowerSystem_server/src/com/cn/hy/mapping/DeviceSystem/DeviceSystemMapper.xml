@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.devicesystem.DeviceSystemDao">
+
+	<select id="geterrorcode" resultType="ModBusErrorCode">
+		select et.id,et.errorname,ed.addr,ed.bitid,ap.name,ap.category from
+		windpower_errortype et,
+		windpower_errortypdetail ed ,modbustcp_sk_app ap where et.id=ed.error_type  and ap.addr=ed.addr and ed.modbus_type=ap.modbus_type
+		and ed.modbus_type=#{modbus_type}
+	</select>
+	
+	<select id="geterrorcodebyaddr" resultType="String">
+	select  bitid from windpower_errortypdetail where  addr=#{addr} and modbus_type=#{modbus_type}
+	</select>
+
+</mapper>

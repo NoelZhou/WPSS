@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="单机调试系统信息">
+		<point id="1" type="yc" addr="12996"  datalen="2" datatype="S32" cof="1" 	unit="kW.h" 	remark="" 			sysremark="" name="总发电量"  			category="其他参数"/>
+		<point id="2" type="yc" addr="12988" datalen="2" datatype="S16" cof="10" 	unit="Hz" 	remark="" 			sysremark="" name="电机频率"  			category="其他参数"/>
+		<point id="3" type="yc" addr="13025"  datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="" 			sysremark="" name="直流母线电压Udc"  		category="其他参数"/>
+		<point id="4" type="yc" addr="13001"  datalen="2" datatype="S16" cof="10000" 	unit="" 	remark="" 			sysremark="" name="机侧功率因素角度"  		category="其他参数"/>
+		<point id="5" type="yc" addr="13002" datalen="2" datatype="S16" cof="10000" 	unit="" 	remark="" 			sysremark="" name="机侧功率因素"  		category="其他参数"/>
+		<point id="6" type="yc" addr="13031" datalen="2" datatype="S16" cof="100" 	unit="Par" 	remark="" 			sysremark="" name="变流器入口水压"  		category="其他参数"/>
+		<point id="7" type="yc" addr="13032" datalen="2" datatype="S16" cof="100" 	unit="Par" 	remark="" 			sysremark="" name="变流器出口水压"  		category="其他参数"/>
+		
+		<point id="8" type="yc" addr="13028" datalen="2" datatype="S16" cof="10" 	unit="℃" 	remark="" 			sysremark="" name="模组最高温度"  		category="水冷参数"/>
+		<point id="9" type="yc" addr="13029" datalen="2" datatype="S16" cof="10" 	unit="℃" 	remark="" 			sysremark="" name="变流器入口水温"  		category="水冷参数"/>
+		<point id="10" type="yc" addr="13030" datalen="2" datatype="S16" cof="10" 	unit="℃" 	remark="" 			sysremark="" name="变流器出口水温"  		category="水冷参数"/>
+		<point id="11" type="yc" addr="13033" datalen="2" datatype="S16"  cof="1" 	unit="L/min" 	remark="" 			sysremark="" name="水流量" 			category="水冷参数"/>
+		<point id="12" type="yc" addr="13034" datalen="2" datatype="S16"  cof="1" 	unit="RH" 	remark="" 			sysremark="" name="控制柜湿度" 			category="水冷参数"/>
+		<point id="13" type="yc" addr="13035" datalen="2" datatype="S16"  cof="1" 	unit="RH" 	remark=""			sysremark="" name="模组柜湿度" 			category="水冷参数"/>
+		<point id="14" type="yc" addr="13036" datalen="2" datatype="S16"  cof="1" 	unit="RH" 	remark="" 			sysremark="" name="滤波柜湿度" 			category="水冷参数"/>
+	</device>
+</root>

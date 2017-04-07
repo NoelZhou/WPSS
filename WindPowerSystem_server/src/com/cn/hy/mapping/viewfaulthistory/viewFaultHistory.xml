@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.viewfaulthistory.viewFaultHistoryDao">
+	
+	<resultMap type="ViewFaultHistory" id="viewFaultHistorymap">
+		
+	</resultMap>
+	
+	<select id="viewFaultHistoryListAll" resultMap="viewFaultHistorymap">
+		select  dt.modbus_type ,msp.addr,d.data,msp.sysremark,msp.name
+		from  windpower_historyerrordata  d ,windpower_device  wd  ,windpower_devicetype  dt, modbustcp_sk_app msp
+		where  d.id=#{id}
+ 		and  d.device_id=wd.id
+  		and  dt.id=wd.device_type_id
+		and dt.modbus_type=msp.modbus_type 
+		and msp.array_type=3
+	</select>
+</mapper>

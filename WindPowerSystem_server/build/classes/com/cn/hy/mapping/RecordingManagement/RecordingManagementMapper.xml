@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.recordingManagement.RecordingManagementDao">
+	<resultMap type="RecordingManagement" id="recordingManagementmap">
+		
+	</resultMap>
+	
+	<!--查询所有  -->
+	<select id="list" resultMap="recordingManagementmap">
+		SELECT weds.id,weds.device_id,weds.device_name,weds.error_type,weds.create_time,weds.error_time,weds.errordata_id,
+		weds.error_excel ,et.errorname,edp.error_name
+		from windpower_errordataparse_dsp weds
+		LEFT JOIN windpower_errortype et on et.id=weds.error_type
+		LEFT JOIN windpower_errordataparse edp on edp.id=weds.errordata_id
+		where 1=1
+		<if test="device_name!=null and device_name!='' ">
+			and weds.device_name LIKE CONCAT(CONCAT('%', trim(#{device_name})),'%')
+		</if>
+		<if test="error_type!=null and error_type!='' and error_type!=0 ">
+			and weds.error_type=#{error_type} 
+		</if> 
+		<if test="start_time!=null and start_time!=''">
+			and weds.create_time >=#{start_time}
+		</if>
+		<if test="end_time!=null and end_time!=''">
+			 and weds.create_time &lt;=#{end_time}
+		</if>
+		ORDER BY  weds.create_time DESC
+	</select>
+</mapper>

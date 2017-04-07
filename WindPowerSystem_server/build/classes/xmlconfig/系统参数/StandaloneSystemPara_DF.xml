@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="双馈变流器" name="单机调试系统信息">
+		<point id="1" type="yc" addr="82"  datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="2" 			sysremark="" name="电网A相电压" 		category="电网参数"/>
+		<point id="2" type="yc" addr="83"  datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="2" 			sysremark="" name="电网B相电压" 		category="电网参数"/>
+		<point id="3" type="yc" addr="84"  datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="2" 			sysremark="" name="电网C相电压"  		category="电网参数"/>
+		<point id="4" type="yc" addr="85"  datalen="2" datatype="S16" cof="10" 	unit="Hz" 	remark="2" 			sysremark="" name="电网频率"  			category="电网参数"/>
+		<point id="5" type="yc" addr="490" datalen="2" datatype="S16" cof="1" 	unit="kW" 	remark="1" 			sysremark="" name="并网有功功率"  		category="电网参数"/>
+		<point id="6" type="yc" addr="491" datalen="2" datatype="S16" cof="1" 	unit="kVar" remark="1" 			sysremark="" name="并网无功功率"  		category="电网参数"/>
+		<point id="7" type="yc" addr="56"  datalen="2" datatype="S16" cof="1" 	unit="" 	remark="1" 			sysremark="" name="断路器动作次数"  		category="电网参数"/>
+		<point id="8" type="yc" addr="30"  datalen="2" datatype="S32" cof="1" 	unit="kW.h" remark="1" 			sysremark="" name="总发电量"  			category="电网参数"/>
+
+		<point id="11" type="yc" addr="259" datalen="2" datatype="S16" cof="1" 	unit="rpm" 	remark="1" 			sysremark="" name="电机转速"  			category="电机参数"/>
+		<point id="12" type="yc" addr="519" datalen="2" datatype="S16" cof="1" 	unit="N.m" 	remark="" 			sysremark="" name="主控转矩"  			category="电机参数"/>
+		<point id="13" type="yc" addr="505" datalen="2" datatype="S16" cof="1" 	unit="N.m" 	remark="1" 			sysremark="" name="当前转矩" 			category="电机参数"/>
+		<point id="14" type="yc" addr="241" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="定子A相电流" 		category="电机参数"/>
+		<point id="15" type="yc" addr="245" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="2" 			sysremark="" name="定子B相电流"  		category="电机参数"/>
+		<point id="16" type="yc" addr="252" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="2" 			sysremark="" name="定子C相电流"  		category="电机参数"/>
+		<point id="17" type="yc" addr="250" datalen="2" datatype="S16" cof="1" 	unit="kW" 	remark="2" 			sysremark="" name="定子有功功率"  		category="电机参数"/>
+		<point id="18" type="yc" addr="251" datalen="2" datatype="S16" cof="1" 	unit="kVar" remark="2" 			sysremark="" name="定子无功功率"  		category="电机参数"/>
+
+		<point id="21" type="yc" addr="502" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="1" 			sysremark="" name="直流电压"  			category="变流器内部参数"/>
+		<point id="22" type="yc" addr="80"  datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="网侧有功电流"  		category="变流器内部参数"/>
+		<point id="23" type="yc" addr="79"  datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="1" 			sysremark="" name="网侧无功电流"  		category="变流器内部参数"/>
+		<point id="23" type="yc" addr="86"  datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="网侧A相电流"  		category="变流器内部参数"/>
+		<point id="25" type="yc" addr="87"  datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="1" 			sysremark="" name="网侧B相电流" 		category="变流器内部参数"/>
+		<point id="26" type="yc" addr="88"  datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="2" 			sysremark="" name="网侧C相电流" 		category="变流器内部参数"/>
+		<point id="27" type="yc" addr="238" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="2" 			sysremark="" name="转子有功电流"  		category="变流器内部参数"/>
+		<point id="28" type="yc" addr="239" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="2" 			sysremark="" name="转子无功电流"  		category="变流器内部参数"/>
+		<point id="29" type="yc" addr="246" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="2" 			sysremark="" name="转子K相电流"  		category="变流器内部参数"/>
+		<point id="30" type="yc" addr="247" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="2" 			sysremark="" name="转子L相电流"  		category="变流器内部参数"/>
+		<point id="31" type="yc" addr="248" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="2" 			sysremark="" name="转子M相电流"  		category="变流器内部参数"/>
+		<point id="32" type="yc" addr="525" datalen="2" datatype="S16" cof="100" unit="℃" 	remark="2" 			sysremark="" name="网侧模组最高温度"  		category="变流器内部参数"/>
+		<point id="33" type="yc" addr="526" datalen="2" datatype="S16" cof="100" unit="℃" 	remark="2" 			sysremark="" name="机侧模组最高温度"  		category="变流器内部参数"/>
+	</device>
+</root>

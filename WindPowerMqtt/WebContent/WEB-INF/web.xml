@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
+  <display-name>WindPowerDataAcquisition</display-name>
+  <servlet>
+    <servlet-name>ChangeStateServlet</servlet-name>
+    <servlet-class>com.hy.servlet.ChangeStateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeviceServlet</servlet-name>
+    <servlet-class>com.hy.servlet.DeviceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AcceptServlet</servlet-name>
+    <servlet-class>com.hy.servlet.AcceptServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>xlsimport</servlet-name>
+    <servlet-class>com.hy.servlet.XlsImport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangeStateServlet</servlet-name>
+    <url-pattern>/ChangeStateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeviceServlet</servlet-name>
+    <url-pattern>/DeviceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AcceptServlet</servlet-name>
+    <url-pattern>/AcceptServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>xlsimport</servlet-name>
+    <url-pattern>/xlsimport</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>jsp/login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

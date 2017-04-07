@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.serviceset.ReportSetDao">
+	<!-- 报表时间设置-->
+	<resultMap type="FormTimeSet" id="formtimesetmap">
+		<id column="id" property="id" />
+		<result column="time_name" property="time_name" />
+		<result column="form_type" property="form_type" />
+		<result column="create_time" property="create_time" />
+		<result column="create_user" property="create_user" />
+		<result column="update_time" property="update_time" />
+		<result column="update_user" property="update_user" />
+		<result column="showin" property="showin" />
+	</resultMap>
+	
+	<select id="listFormTimeSet" resultMap="formtimesetmap" parameterType="FormTimeSet">
+		select id,time_name,form_type,showin 
+		from windpower_formtimeset where form_type = #{form_type}
+		<if test="showin != null and showin == 1">
+			and showin= #{showin}
+		</if>
+	</select>
+	
+	<insert id="saveFormTimeSet" parameterType="FormTimeSet">
+		insert into windpower_formtimeset
+		(time_name,form_type,create_time,create_user,showin)
+		values
+		(#{time_name},#{form_type},#{create_time},#{create_user},#{showin})
+	</insert>
+	
+	<update id="updateShowin" parameterType="FormTimeSet">
+		update windpower_formtimeset 
+		set 
+			showin = #{showin}
+		where id = #{id}
+	</update>
+	
+	<!-- 显示字段设置-->
+	<resultMap type="FormColnum" id="formcolnummap">
+		<id column="id" property="id" />
+		<result column="errorcode" property="errorcode" />
+		<result column="codesx" property="codesx" />
+		<result column="form_type" property="form_type" />
+		<result column="showin" property="showin" />
+	</resultMap>	
+	
+	<select id="listFormColnum" resultMap="formcolnummap">
+		select id,errorcode,codesx,form_type,showin 
+		from windpower_formcolnumset where form_type = #{form_type}
+		<if test="showin != null and showin == 1">
+			and showin= #{showin}
+		</if>
+	</select>
+	
+	<update id="updateFormColnum" parameterType="FormColnum">
+		update windpower_formcolnumset 
+		set 
+			showin = #{showin}
+		where id = #{id}
+	</update>
+	
+</mapper>

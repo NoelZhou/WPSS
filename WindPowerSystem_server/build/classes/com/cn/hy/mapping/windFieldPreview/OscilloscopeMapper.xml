@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.windFieldPreview.OscilloscopeDao">
+	
+	<resultMap type="deviceInfoDspWaveform" id="deviceInfoDspWaveform">
+		<id column="id" property="id" />
+		<result column="code" property="code" />
+		<result column="name" property="name" />
+		<result column="type" property="type" />
+		<result column="modbus_type" property="modbusType" />
+		<result column="description" property="description" />
+		<result column="create_user" property="createUser" />
+		<result column="create_time" property="createTime" />
+		<result column="update_user" property="updateUser" />
+		<result column="update_time" property="updateTime" />
+	</resultMap>
+	
+	<resultMap type="deviceInfo1" id="deviceInfo1" >
+		<id column="id" property="id" />
+		<result column="deviceId" property="deviceId" />
+		<result column="d_type" property="dType" />
+		<result column="dsp_type" property="dspType" />
+		<result column="ip" property="ip" />
+		<result column="port" property="port" />
+		<result column="is_sync" property="isSync" />
+		<result column="create_user" property="createUser" />
+		<result column="create_time" property="createTime" />
+		<result column="update_user" property="updateUser" />
+		<result column="update_time" property="updateTime" />
+	</resultMap>
+	
+	<select id="getDeviceinfoDspWaveformList" resultMap="deviceInfoDspWaveform" parameterType="DeviceinfoDspWaveform">
+		SELECT
+			DISTINCT
+			wddw.`code`,
+			wddw.`name`
+		FROM
+			windpower_deviceinfo_dsp_waveform wddw
+		JOIN windpower_devicetype wdt ON wdt.modbus_type = wddw.modbus_type
+		JOIN windpower_device wd ON wd.device_type_id = wdt.id
+		JOIN windpower_deviceinfo wdi ON wdi.device_id = wd.id
+		AND wdi.d_type = 'dsp'
+		WHERE
+			wd.id = #{deviceId}
+		AND wddw.type = #{dspType}
+		AND wddw.model = #{model}
+	</select>
+	
+	<select id="getDeviceInfoDspList" resultMap="deviceInfo1" parameterType="DeviceInfo1">
+		SELECT
+			wdi.dsp_type AS dspType,
+			wdi.ip AS ip,
+			wdi.`port` AS `port`,
+			wdi.dsp_type AS dspType
+		FROM
+			windpower_deviceinfo wdi
+		WHERE
+			wdi.device_id = #{deviceId}
+		AND wdi.d_type = 'dsp'
+		ORDER BY wdi.dsp_type ASC
+	</select>
+</mapper>

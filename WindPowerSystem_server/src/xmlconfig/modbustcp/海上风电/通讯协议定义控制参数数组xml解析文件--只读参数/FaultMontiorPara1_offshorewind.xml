@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="故障检测板1数据">
+		<point id="622" type="yc" addr="13591" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="M1控制字" 	category="故障检测板1数据"/>
+		<point id="623" type="yc" addr="13592" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="M1返回字" 	category="故障检测板1数据"/>
+		<point id="624" type="yx" addr="13593" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="M1成功状态字" 	category="故障检测板1数据"/>
+		<point id="625" type="yx" addr="13594" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="M1失败状态字" 	category="故障检测板1数据"/>
+		<point id="626" type="yc" addr="13595" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="M1运行状态" 	category="故障检测板1数据"/>
+		<point id="627" type="yx" addr="13596" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="IGBT故障字" 		category="故障检测板1数据"/>
+		<point id="628" type="yc" addr="13597" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="故障检测板1数据"/>
+		<point id="629" type="yc" addr="13598" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="故障检测板1数据"/>
+		<point id="630" type="yc" addr="13599" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="故障检测板1数据"/>
+		<point id="631" type="yc" addr="13600" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 			category="故障检测板1数据"/>
+	</device>
+	<bitenumeration id="624" addr="13593">
+		<list bit="0" 	var0="" var1="时间设置成功">bit0</list>
+		<list bit="1" 	var0="" var1="运行查询成功">bit1</list>
+		<list bit="2" 	var0="" var1="当前故障查询成功">bit2</list>
+		<list bit="3" 	var0="" var1="故障增查询成功">bit3</list>
+		<list bit="4" 	var0="" var1="故障减查询成功">bit4</list>
+		<list bit="5" 	var0="" var1="">bit5</list>
+		<list bit="6" 	var0="" var1="">bit6</list>
+		<list bit="7" 	var0="" var1="">bit7</list>
+		<list bit="8" 	var0="" var1="">bit8</list>
+		<list bit="9" 	var0="" var1="">bit9</list>
+		<list bit="10" 	var0="" var1="">bit10</list>
+		<list bit="11" 	var0="" var1="">bit11</list>
+		<list bit="12" 	var0="" var1="">bit12</list>
+		<list bit="13" 	var0="" var1="">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="625" addr="13594">
+		<list bit="0" 	var0="" var1="时间设置失败">bit0</list>
+		<list bit="1" 	var0="" var1="运行查询失败">bit1</list>
+		<list bit="2" 	var0="" var1="CAN通讯故障">bit2</list>
+		<list bit="3" 	var0="" var1="当前故障查询失败">bit3</list>
+		<list bit="4" 	var0="" var1="故障增查询失败">bit4</list>
+		<list bit="5" 	var0="" var1="故障减查询失败">bit5</list>
+		<list bit="6" 	var0="" var1="">bit6</list>
+		<list bit="7" 	var0="" var1="">bit7</list>
+		<list bit="8" 	var0="" var1="">bit8</list>
+		<list bit="9" 	var0="" var1="">bit9</list>
+		<list bit="10" 	var0="" var1="RC_A故障">bit10</list>
+		<list bit="11" 	var0="" var1="RC_B故障">bit11</list>
+		<list bit="12" 	var0="" var1="RC_C故障">bit12</list>
+		<list bit="13" 	var0="" var1="24V电源故障">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="627" addr="13596">
+		<list bit="0" 	var0="" var1="FA1">bit0</list>
+		<list bit="1" 	var0="" var1="FA2">bit1</list>
+		<list bit="2" 	var0="" var1="FA3">bit2</list>
+		<list bit="3" 	var0="" var1="FA4">bit3</list>
+		<list bit="4" 	var0="" var1="FB1">bit4</list>
+		<list bit="5" 	var0="" var1="FB2">bit5</list>
+		<list bit="6" 	var0="" var1="">bit6</list>
+		<list bit="7" 	var0="" var1="">bit7</list>
+		<list bit="8" 	var0="" var1="FB3">bit8</list>
+		<list bit="9" 	var0="" var1="FB4">bit9</list>
+		<list bit="10" 	var0="" var1="FC1">bit10</list>
+		<list bit="11" 	var0="" var1="FC2">bit11</list>
+		<list bit="12" 	var0="" var1="FC3">bit12</list>
+		<list bit="13" 	var0="" var1="FC4">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="">bit15</list>
+	</bitenumeration>
+</root>

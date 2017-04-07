@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="单机调试系统信息">
+		<point id="181" type="yc" addr="12988" datalen="2" datatype="S16" cof="10" 	unit="Hz" 	remark="" 			sysremark="" name="电机频率" 		category="中间变量监控"/>
+		<point id="182" type="yc" addr="12989" datalen="2" datatype="S16" cof="100" 	unit="rpm" 	remark="" 			sysremark="" name="电机转速" 		category="中间变量监控"/>
+		<point id="183" type="yc" addr="12990" datalen="2" datatype="S16" cof="1" 	unit="kW" 	remark="" 			sysremark="" name="电机总有功功率"  	category="中间变量监控"/>
+		<point id="184" type="yc" addr="12991" datalen="2" datatype="S16" cof="1" 	unit="kVar" 	remark="" 			sysremark="" name="电机总无功功率"  	category="中间变量监控"/>
+		<point id="185" type="yc" addr="12992" datalen="2" datatype="S16" cof="1" 	unit="N.m" 	remark="" 			sysremark="" name="给定转矩"  	category="中间变量监控"/>
+		<point id="186" type="yc" addr="12993" datalen="2" datatype="S16" cof="1" 	unit="N.m" 	remark="" 			sysremark="" name="当前转矩"  		category="中间变量监控"/>
+		<point id="187" type="yc" addr="12994" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="" 			sysremark="" name="电机端口电压Uuv"  		category="中间变量监控"/>
+		<point id="188" type="yc" addr="12995" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="" 			sysremark="" name="电机端口电压Uvw"  	category="中间变量监控"/>
+		<point id="189" type="yc" addr="12996" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name="累计发电量低位字"  	category="中间变量监控"/>
+		<point id="190" type="yc" addr="12997" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name="累计发电量高位字"  	category="中间变量监控"/>
+		<point id="191" type="yc" addr="12998" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="电机U相电流" 		category="中间变量监控"/>
+		<point id="192" type="yc" addr="12999" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="电机V相电流" 			category="中间变量监控"/>
+		<point id="193" type="yc" addr="13000" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="电机W相电流"  			category="中间变量监控"/>
+		<point id="194" type="yc" addr="13001" datalen="2" datatype="S16" cof="10000" 	unit="" 	remark="" 			sysremark="" name="机侧功率因素角度"  			category="中间变量监控"/>
+		<point id="195" type="yc" addr="13002" datalen="2" datatype="S16" cof="10000" 	unit="" 	remark="" 			sysremark="" name="机侧功率因素"  			category="中间变量监控"/>
+		<point id="196" type="yc" addr="13003" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="197" type="yc" addr="13004" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="198" type="yc" addr="13005" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="199" type="yc" addr="13006" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="200" type="yc" addr="13007" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="201" type="yc" addr="13008" datalen="2" datatype="S16" cof="10" 	unit="Hz" 	remark="" 			sysremark="" name="电网频率" 			category="中间变量监控"/>
+		<point id="202" type="yc" addr="13009" datalen="2" datatype="S16" cof="1" 	unit="kW" 	remark="" 			sysremark="" name="并网有功功率" 			category="中间变量监控"/>
+		<point id="203" type="yc" addr="13010" datalen="2" datatype="S16" cof="1" 	unit="kVar" 	remark="" 			sysremark="" name="并网无功功率"  			category="中间变量监控"/>
+		<point id="204" type="yc" addr="13011" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="" 			sysremark="" name="电网线电压Uab"  			category="中间变量监控"/>
+		<point id="205" type="yc" addr="13012" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="" 			sysremark="" name="电网线电压Ubc"  			category="中间变量监控"/>
+		<point id="206" type="yc" addr="13013" datalen="2" datatype="U16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="并网A相电流"  			category="中间变量监控"/>
+		<point id="207" type="yc" addr="13014" datalen="2" datatype="U16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="并网B相电流"  			category="中间变量监控"/>
+		<point id="208" type="yc" addr="13015" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="" 			sysremark="" name="并网C相电流"  			category="中间变量监控"/>
+		<point id="209" type="yc" addr="13016" datalen="2" datatype="S16" cof="1" 	unit="kVar" 	remark="" 			sysremark="" name="主控给定无功"  			category="中间变量监控"/>
+		<point id="210" type="yc" addr="13017" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="211" type="yc" addr="13018" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name="" 			category="中间变量监控"/>
+		<point id="212" type="yc" addr="13019" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name="" 			category="中间变量监控"/>
+		<point id="213" type="yc" addr="13020" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="214" type="yc" addr="13021" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="215" type="yc" addr="13022" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="216" type="yc" addr="13023" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="" 			sysremark="" name="直流电压Up"  			category="中间变量监控"/>
+		<point id="217" type="yc" addr="13024" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="" 			sysremark="" name="直流电压Un"  			category="中间变量监控"/>
+		<point id="218" type="yc" addr="13025" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="" 			sysremark="" name="直流电压Udc"  			category="中间变量监控"/>
+		<point id="219" type="yc" addr="13026" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="220" type="yc" addr="13027" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>		
+		<point id="221" type="yc" addr="13028" datalen="2" datatype="S16" cof="1" 	unit="℃" 	remark="" 			sysremark="" name="模组最高温度" 			category="中间变量监控"/>
+		<point id="222" type="yc" addr="13029" datalen="2" datatype="S16" cof="10" 	unit="℃" 	remark="" 			sysremark="" name="变流器入口水温" 			category="中间变量监控"/>
+		<point id="223" type="yc" addr="13030" datalen="2" datatype="S16" cof="10" 	unit="℃" 	remark="" 			sysremark="" name="变流器出口水温"  			category="中间变量监控"/>
+		<point id="224" type="yc" addr="13031" datalen="2" datatype="S16" cof="100" 	unit="Par" 	remark="" 			sysremark="" name="变流器入口水压"  			category="中间变量监控"/>
+		<point id="225" type="yc" addr="13032" datalen="2" datatype="S16" cof="100" 	unit="Par" 	remark="" 			sysremark="" name="变流器出口水压"  			category="中间变量监控"/>
+		<point id="226" type="yc" addr="13033" datalen="2" datatype="S16" cof="1" 	unit="L/min" 	remark="" 			sysremark="" name="流量"  			category="中间变量监控"/>
+		<point id="227" type="yc" addr="13034" datalen="2" datatype="S16" cof="1" 	unit="RH" 	remark="" 			sysremark="" name="控制柜湿度"  			category="中间变量监控"/>
+		<point id="228" type="yc" addr="13035" datalen="2" datatype="S16" cof="1" 	unit="RH" 	remark="" 			sysremark="" name="模组柜湿度"  			category="中间变量监控"/>
+		<point id="229" type="yc" addr="13036" datalen="2" datatype="S16" cof="1" 	unit="RH" 	remark="" 			sysremark="" name="滤波柜湿度"  			category="中间变量监控"/>
+		<point id="230" type="yc" addr="13037" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>		
+		<point id="231" type="yc" addr="13038" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name="" 			category="中间变量监控"/>
+		<point id="232" type="yc" addr="13039" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name="" 			category="中间变量监控"/>
+		<point id="233" type="yc" addr="13040" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="234" type="yc" addr="13041" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="235" type="yc" addr="13042" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="236" type="yc" addr="13043" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="237" type="yc" addr="13044" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="238" type="yc" addr="13045" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="239" type="yc" addr="13046" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		<point id="240" type="yc" addr="13047" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 			sysremark="" name=""  			category="中间变量监控"/>
+		
+	</device>
+</root>

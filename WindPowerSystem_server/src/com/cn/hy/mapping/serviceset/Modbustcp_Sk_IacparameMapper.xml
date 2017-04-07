@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.serviceset.Modbustcp_Sk_IacparameDao">
+	
+	<resultMap type="Modbustcp_Sk_Iacparame" id="Modbustcp_Sk_Iacparamemap">
+	
+	</resultMap>
+	
+	<!-- 通过addr获取数据 -->
+	<select id="findByMskIAppAddr" resultMap="Modbustcp_Sk_Iacparamemap">
+		SELECT id,point_id,var AS varId,name,remark1,addr,array_type,modbus_type,rolecode
+		from Modbustcp_Sk_Iacparame where addr=#{addr} and modbus_type=#{modbus_type}
+	</select>
+</mapper>

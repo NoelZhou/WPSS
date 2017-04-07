@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.devicesystem.DeviceSystemTestDao">
+	<select id="getControlModelTest" resultType="DeviceControlParme">
+		select * from
+		modbustcp_sk_controlmodel where 1=1 and
+		modbus_type=#{modbus_type} and
+		name=#{controlParame} and model_type=1
+	</select>
+	<select id="getControlModelTestList" resultType="DeviceControlParme">
+		select * from
+		modbustcp_sk_controlmodel where 1=1 and
+		modbus_type=#{modbustcp_type}
+		and model_type=#{model_type} order by id
+
+	</select>
+
+	<select id="getparamevalue" resultType="ModBusVar">
+		select * from
+		modbustcp_sk_iacparame where 1=1
+		and modbus_type=#{modbustcp_type} and
+		addr=#{addr}
+	</select>
+
+	<select id="getaddrparasewall" resultType="String" >
+		select array_type from
+		modbustcp_sk_app t1 where
+		t1.addr=#{addr} and t1.modbus_type=#{modbustcp_type}
+	</select>
+
+	<select id="getaddrparasewallzh" resultType="String">
+		select code from
+		windpower_db.modbustcp_sk_parameshow t
+		where 
+		t.array_type=#{addr} and t.modbustcp_type=#{modbustcp_type}
+	</select>
+		<select id="getaddrparasewallzh_fw" resultType="String">
+		select fw_code from
+		windpower_db.modbustcp_sk_parameshow t
+		where 
+		t.array_type=#{addr} and t.modbustcp_type=#{modbustcp_type}
+	</select>
+
+</mapper>

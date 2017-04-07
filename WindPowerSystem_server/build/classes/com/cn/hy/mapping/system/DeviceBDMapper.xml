@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.system.DeviceBDDao">
+
+	<select id="selectDeviceBaseData" resultMap="devicebdmap">
+		select 
+		id,paramter_id,create_time,showtype,modbustype 
+		from windpower_devicebasedata 
+		where showtype = #{showtype}
+		ORDER BY paramter_id ASC
+	</select>  
+	
+	<insert id="saveDeviceBaseData" parameterType="DeviceBD">
+		insert into windpower_devicebasedata
+		(paramter_id,create_time,create_user,showtype,modbustype)
+		values
+		(#{paramter_id},#{create_time},#{create_user},#{showtype},#{modbustype})
+	</insert>
+	
+	<delete id="deleteDeviceBaseData" parameterType="DeviceBD">
+		delete from windpower_devicebasedata
+		where paramter_id = #{paramter_id} and modbustype=#{modbustype}
+	</delete>
+	
+	<select id="listDeviceBaseData" resultMap="devicebdmap">
+		select 
+		id,paramter_id,create_time,showtype,modbustype
+		from windpower_devicebasedata 
+		where modbustype = #{modbustype}
+		ORDER BY paramter_id ASC
+	</select>
+	
+	<update id="updateDeviceBaseData" parameterType="DeviceBD">
+		update windpower_devicebasedata 
+		set 
+			showtype = #{showtype}
+		where id in (${ids})
+	</update>
+
+	<resultMap type="DeviceBD" id="devicebdmap">
+		<id column="id" property="id" />
+		<result column="paramter_id" property="paramter_id" />
+		<result column="create_time" property="create_time" />
+		<result column="update_time" property="update_time" />
+		<result column="create_user" property="create_user" />
+		<result column="update_user" property="update_user" />
+		<result column="showtype" property="showtype" />
+		<result column="modbustype" property="modbustype" />
+	</resultMap>
+</mapper>

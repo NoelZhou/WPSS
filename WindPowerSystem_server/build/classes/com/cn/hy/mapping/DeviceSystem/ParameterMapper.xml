@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.hy.dao.devicesystem.ParameterServiceDao">
+<resultMap type="Parameter" id="parameterMap">
+<id column="id" property="id" />
+<result column="name" property="name"/>
+<result column="creat_time" property="creat_time"/>
+<result column="parent_type" property="parent_type"/>
+<result column="crent_user" property="crent_user"/>
+<result column="modbustcp_type" property="modbustcp_type"/>
+<result column="addr" property="addr"/>
+<result column="array_type" property="array_type"/>
+<result column="unit" property="unit"/>
+<result column="category" property="category"/>
+<result column="remark" property="remark"/>
+<result column="sysremark" property="sysremark"/>
+<result column="modbus_type" property="modbus_type"/>
+<result column="basicname" property="basicname"/>
+<result column="rolecode" property="rolecode"/>
+<result column="array_type" property="array_type_list"/>
+</resultMap>
+<select id="selectbytype" resultMap="parameterMap">
+select  * from   modbustcp_sk_parameshow where parent_type=#{parent_type} and modbustcp_type=#{modbustcp_type} order by code asc 
+
+</select>
+<select id="selectbychild" resultMap="parameterMap">
+select * from  modbustcp_sk_app where array_type=#{id} and modbus_type=#{modbustcp_type}  order  by  addr  asc
+</select>
+<select id="selectdervicebasic" resultMap="parameterMap">
+select 	wd.id,wd.device_type_id,wd.run_state,dt.id,dt.modbus_type,wd.name
+	from 
+	windpower_device  wd ,windpower_devicetype dt where wd.device_type_id=dt.id  and dt.modbus_type=#{modbus_type}
+	and wd.run_state=0
+</select>
+<select id="selectdervicename" resultMap="parameterMap">
+select *from 
+	windpower_db.windpower_basedataset   where  isbasicparm=1 and  modbus_type=#{modbus_type}
+</select>
+</mapper>

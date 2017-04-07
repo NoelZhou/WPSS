@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.serviceset.Modbustcp_Sk_AppparameDao">
+	
+	<resultMap type="Modbustcp_Sk_Appparame" id="Modbustcp_Sk_Appparamemap">
+	
+	</resultMap>
+	
+	<!-- 通过addr获取数据 -->
+	<select id="findByAddr" resultMap="Modbustcp_Sk_Appparamemap">
+		SELECT id,bit_id,var0,var1,remark1,point_id,addr,modbus_type,array_type,rolecode
+		from modbustcp_sk_appparame where addr=#{addr} and modbus_type=#{modbus_type}
+	</select>
+</mapper>

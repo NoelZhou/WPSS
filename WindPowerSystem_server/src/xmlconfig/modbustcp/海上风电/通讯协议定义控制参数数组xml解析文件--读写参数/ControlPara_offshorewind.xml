@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="控制参数">
+		<point id="1" 	type="yk" addr="12788" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="控制字" 		category="控制参数数组"/>
+		<point id="2" 	type="yk" addr="12789" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="3" 	type="yk" addr="12790" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="网侧无功电流" 	category="控制参数数组"/>
+		<point id="4" 	type="yk" addr="12791" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="网侧有功电流" 	category="控制参数数组"/>
+		<point id="5" 	type="yk" addr="12792" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="直流电压增量" 	category="控制参数数组"/>
+		<point id="6" 	type="yk" addr="12793" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="7" 	type="yk" addr="12794" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="8" 	type="yk" addr="12795" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="9" 	type="yk" addr="12796" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="10" 	type="yk" addr="12797" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="11" 	type="yk" addr="12798" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="机侧无功电流" 	category="控制参数数组"/>
+		<point id="12" 	type="yk" addr="12799" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="机侧有功电流" 	category="控制参数数组"/>
+		<point id="13" 	type="yk" addr="12800" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="转速给定" 		category="控制参数数组"/>
+		<point id="14" 	type="yk" addr="12801" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="转矩给定" 		category="控制参数数组"/>
+		<point id="15" 	type="yk" addr="12802" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="16" 	type="yk" addr="12803" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="17" 	type="yk" addr="12804" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="18" 	type="yk" addr="12805" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="19" 	type="yk" addr="12806" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+		<point id="20" 	type="yk" addr="12807" datalen="2" datatype="S16" datalimitmin="-32768" datalimitmax="32767" cof="1" unit="" remark="" sysremark="" name="备用" 		category="控制参数数组"/>
+	</device>
+	<enumeration id="1" addr="12788">
+		<list var="113">启动</list>
+		<list var="114">加载</list>
+		<list var="115">全部停机</list>
+		<list var="116">仅机侧停机</list>
+		<list var="117">复位</list>
+		<list var="118">PLC复位</list>
+		<list var="119">PLC关机</list>
+		<list var="120">PLC重启</list>
+		<list var="121">工作模式切换</list>
+		<list var="122">网侧1激活</list>
+		<list var="123">网侧2激活</list>
+		<list var="124">机侧1激活</list>
+		<list var="125">机侧2激活</list>
+		<list var="126">模组1使能</list>
+		<list var="127">模组2使能</list>
+		<list var="129">模组3使能</list>
+		<list var="130">模组4使能</list>
+		<list var="131">跟踪模式设置</list>
+		<list var="132">远程切换</list>
+		<list var="133">功率曲线激活</list>
+		<list var="134">U盘保存激活</list>
+		<list var="135">调制模式设置</list>
+		<list var="136">LVRT功能设置</list>
+		<list var="137">工作模式确认</list>
+		<list var="138">PLC时间确认</list>
+		<list var="139">网DSP设置确认</list>
+		<list var="140">网DSP设置复位</list>
+		<list var="141">网DSP查询确认</list>
+		<list var="142">网DSP查询复位</list>
+		<list var="143">机DSP设置确认</list>
+		<list var="145">机DSP设置复位</list>
+		<list var="146">机DSP查询确认</list>
+		<list var="147">机DSP查询复位</list>
+		<list var="148">PLC_ID确认</list>
+		<list var="149">PC_ID确认</list>
+		<list var="150">功率曲线设置</list>
+		<list var="151">功率曲线读取</list>
+		<list var="152">系统参数设置</list>
+		<list var="153">系统参数读取</list>
+		<list var="154">U盘保存清零</list>
+		<list var="155">U盘参数拷贝</list>
+		<list var="156">网侧1故障查询</list>
+		<list var="157">网侧2故障查询</list>
+		<list var="158">机侧1故障查询</list>
+		<list var="159">机侧2故障查询</list>
+		<list var="161">PLC故障查询</list>
+		<list var="162">故障参数读取</list>
+		<list var="163">DSP故障查询</list>
+		<list var="164">DSP故障显示</list>
+		<list var="165">PLC故障读取</list>
+		<list var="166">PLC故障显示</list>
+		<list var="167">水冷温度补偿</list>
+		<list var="168">水泵停止</list>
+		<list var="169">水泵启动</list>
+		<list var="170">内循环启动</list>
+		<list var="171">外循环启动</list>
+		<list var="172">M1故障+查询</list>
+		<list var="173">M1故障-查询</list>
+		<list var="174">M1当前故障查询</list>
+		<list var="175">M2故障+查询</list>
+		<list var="177">M2故障-查询</list>
+		<list var="178">M2当前故障查询</list>
+		<list var="179">M3故障+查询</list>
+		<list var="180">M3故障-查询</list>
+		<list var="181">M3当前故障查询</list>
+		<list var="182">M4故障+查询</list>
+		<list var="183">M4故障-查询</list>
+		<list var="184">M4当前故障查询</list>
+		<list var="185">CP故障+查询</list>
+		<list var="186">CP故障-查询</list>
+		<list var="187">CP当前故障查询</list>
+	</enumeration>
+</root>

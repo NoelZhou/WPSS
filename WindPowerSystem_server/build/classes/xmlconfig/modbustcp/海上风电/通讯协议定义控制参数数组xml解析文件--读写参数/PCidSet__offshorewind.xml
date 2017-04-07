@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="PCid设置参数">
+		<point id="189" type="yt" addr="13809" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" 	cof="1" unit="" remark="" sysremark="" name="PCid_1" 	category="PCid设置参数"/>
+		<point id="190" type="yt" addr="13810" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255"   cof="1" unit="" remark="" sysremark="" name="PCid_2" 	category="PCid设置参数"/>
+		<point id="191" type="yt" addr="13811" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" 	cof="1" unit="" remark="" sysremark="" name="PCid_3" 	category="PCid设置参数"/>
+		<point id="192" type="yt" addr="13812" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255"   cof="1" unit="" remark="" sysremark="" name="PCid_4" 	category="PCid设置参数"/>
+		<point id="193" type="yt" addr="13813" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" 	cof="1" unit="" remark="" sysremark="" name="PCid_5" 	category="PCid设置参数"/>
+		<point id="194" type="yt" addr="13814" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255"   cof="1" unit="" remark="" sysremark="" name="PCid_6" 	category="PCid设置参数"/>
+	</device>
+</root>

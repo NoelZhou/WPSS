@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.datadspacp.DatadspacpDao">
+	<resultMap type="Datadspacp" id="datadspacp">
+		
+	</resultMap>
+
+	<select id="selectDatadspacpList" resultType="datadspacp">
+		select id,employeeid,datastr,data_type,create_time,xh 
+		FROM windpower_data_dspacq
+		where employeeid=#{employeeid}
+		and xh=#{xh}
+		order by id asc
+	</select>
+	
+	<select id="selectDatadspacpGropby" resultType="datadspacp">
+		select id,employeeid,datastr,data_type,max(create_time) create_time,xh  
+		FROM windpower_data_dspacq
+		where employeeid=#{employeeid}
+		group by xh
+		order by create_time desc
+	</select>
+</mapper>

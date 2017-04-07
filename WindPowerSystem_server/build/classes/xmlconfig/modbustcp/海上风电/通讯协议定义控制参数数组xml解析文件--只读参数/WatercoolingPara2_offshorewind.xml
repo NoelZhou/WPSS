@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="水冷系统温度数据2">
+		<point id="592" type="yc" addr="13561" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 	name="水冷控制字"       category="水冷系统温度数据2"/>
+		<point id="593" type="yc" addr="13562" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 	        category="水冷系统温度数据2"/>
+		<point id="594" type="yc" addr="13563" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="水冷状态字1"  category="水冷系统温度数据2"/>
+		<point id="595" type="yc" addr="13564" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="ARM节点故障"  category="水冷系统温度数据2"/>
+		<point id="596" type="yc" addr="13565" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 	        category="水冷系统温度数据2"/>
+		<point id="597" type="yc" addr="13566" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="水冷状态字2"  category="水冷系统温度数据2"/>
+		<point id="598" type="yc" addr="13567" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="水冷状态字3"  category="水冷系统温度数据2"/>
+		<point id="599" type="yc" addr="13568" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="水冷状态字4" 	category="水冷系统温度数据2"/>
+		<point id="600" type="yc" addr="13569" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="601" type="yc" addr="13570" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="602" type="yc" addr="13571" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="603" type="yc" addr="13572" datalen="2" datatype="S16"  cof="1" 	unit="RH" 	remark="" sysremark="" 		name="控制柜湿度" 	category="水冷系统温度数据2"/>
+		<point id="604" type="yc" addr="13573" datalen="2" datatype="S16"  cof="1" 	unit="RH" 	remark="" sysremark="" 		name="模组柜湿度" 	category="水冷系统温度数据2"/>
+		<point id="605" type="yc" addr="13574" datalen="2" datatype="S16"  cof="1" 	unit="RH" 	remark="" sysremark="" 		name="滤波柜湿度" 	category="水冷系统温度数据2"/>
+		<point id="606" type="yc" addr="13575" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="607" type="yc" addr="13576" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="608" type="yc" addr="13577" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="609" type="yc" addr="13578" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="610" type="yc" addr="13579" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="611" type="yc" addr="13580" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="612" type="yc" addr="13581" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="613" type="yc" addr="13582" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="614" type="yc" addr="13583" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="615" type="yc" addr="13584" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="616" type="yc" addr="13585" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="617" type="yc" addr="13586" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="618" type="yc" addr="13587" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="619" type="yc" addr="13588" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="620" type="yc" addr="13589" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+		<point id="621" type="yc" addr="13590" datalen="2" datatype="S16"  cof="1" 	unit="" 	remark="" sysremark="" 		name="" 		category="水冷系统温度数据2"/>
+	</device>
+	<bitenumeration id="594" addr="13563">
+		<list bit="0" 	var0="" var1="风扇1启动">bit0</list>
+		<list bit="1" 	var0="" var1="风扇2启动">bit1</list>
+		<list bit="2" 	var0="" var1="风扇3启动">bit2</list>
+		<list bit="3" 	var0="" var1="风扇4启动">bit3</list>
+		<list bit="4" 	var0="" var1="水泵1启动">bit4</list>
+		<list bit="5" 	var0="" var1="水泵2启动">bit5</list>
+		<list bit="6" 	var0="" var1="水路加热1启动">bit6</list>
+		<list bit="7" 	var0="" var1="水路加热2启动">bit7</list>
+		<list bit="8" 	var0="" var1="内循环启动">bit8</list>
+		<list bit="9" 	var0="" var1="外循环启动">bit9</list>
+		<list bit="10" 	var0="" var1="">bit10</list>
+		<list bit="11" 	var0="" var1="">bit11</list>
+		<list bit="12" 	var0="" var1="">bit12</list>
+		<list bit="13" 	var0="" var1="">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="水冷系统心跳">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="595" addr="13564">
+		<list bit="0" 	var0="" var1="网侧电抗器">bit0</list>
+		<list bit="1" 	var0="" var1="机侧电抗器">bit1</list>
+		<list bit="2" 	var0="" var1="网侧综保">bit2</list>
+		<list bit="3" 	var0="" var1="机侧综保">bit3</list>
+		<list bit="4" 	var0="" var1="缓起回路熔丝">bit4</list>
+		<list bit="5" 	var0="" var1="除湿按钮">bit5</list>
+		<list bit="6" 	var0="" var1="网侧隔离刀">bit6</list>
+		<list bit="7" 	var0="" var1="机侧隔离刀">bit7</list>
+		<list bit="8" 	var0="" var1="门锁">bit8</list>
+		<list bit="9" 	var0="" var1="">bit9</list>
+		<list bit="10" 	var0="" var1="">bit10</list>
+		<list bit="11" 	var0="" var1="">bit11</list>
+		<list bit="12" 	var0="" var1="">bit12</list>
+		<list bit="13" 	var0="" var1="">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="597" addr="13566">
+		<list bit="0" 	var0="" var1="水冷板CAN通讯">bit0</list>
+		<list bit="1" 	var0="" var1="ARM监控节点">bit1</list>
+		<list bit="2" 	var0="" var1="">bit2</list>
+		<list bit="3" 	var0="" var1="">bit3</list>
+		<list bit="4" 	var0="" var1="">bit4</list>
+		<list bit="5" 	var0="" var1="">bit5</list>
+		<list bit="6" 	var0="" var1="">bit6</list>
+		<list bit="7" 	var0="" var1="">bit7</list>
+		<list bit="8" 	var0="" var1="水路加热成功">bit8</list>
+		<list bit="9" 	var0="" var1="水冷ARM板时间设置成功">bit9</list>
+		<list bit="10" 	var0="" var1="水冷ARM板时间设置失败">bit10</list>
+		<list bit="11" 	var0="" var1="">bit11</list>
+		<list bit="12" 	var0="" var1="">bit12</list>
+		<list bit="13" 	var0="" var1="">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="598" addr="13567">
+		<list bit="0" 	var0="" var1="风扇1启动成功">bit0</list>
+		<list bit="1" 	var0="" var1="风扇2启动成功">bit1</list>
+		<list bit="2" 	var0="" var1="风扇3启动成功">bit2</list>
+		<list bit="3" 	var0="" var1="风扇4启动成功">bit3</list>
+		<list bit="4" 	var0="" var1="水泵1启动成功">bit4</list>
+		<list bit="5" 	var0="" var1="水泵2启动成功">bit5</list>
+		<list bit="6" 	var0="" var1="水路加热1成功">bit6</list>
+		<list bit="7" 	var0="" var1="水路加热2成功">bit7</list>
+		<list bit="8" 	var0="" var1="内循环切换成功">bit8</list>
+		<list bit="9" 	var0="" var1="外循环切换成功">bit9</list>
+		<list bit="10" 	var0="" var1="">bit10</list>
+		<list bit="11" 	var0="" var1="">bit11</list>
+		<list bit="12" 	var0="" var1="">bit12</list>
+		<list bit="13" 	var0="" var1="">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="">bit15</list>
+	</bitenumeration>
+	<bitenumeration id="599" addr="13568">
+		<list bit="0" 	var0="" var1="风扇1启动失败">bit0</list>
+		<list bit="1" 	var0="" var1="风扇2启动失败">bit1</list>
+		<list bit="2" 	var0="" var1="风扇3启动失败">bit2</list>
+		<list bit="3" 	var0="" var1="风扇4启动失败">bit3</list>
+		<list bit="4" 	var0="" var1="水泵1启动失败">bit4</list>
+		<list bit="5" 	var0="" var1="水泵2启动失败">bit5</list>
+		<list bit="6" 	var0="" var1="水路加热1失败">bit6</list>
+		<list bit="7" 	var0="" var1="水路加热2失败">bit7</list>
+		<list bit="8" 	var0="" var1="内循环切换失败">bit8</list>
+		<list bit="9" 	var0="" var1="外循环切换失败">bit9</list>
+		<list bit="10" 	var0="" var1="">bit10</list>
+		<list bit="11" 	var0="" var1="">bit11</list>
+		<list bit="12" 	var0="" var1="">bit12</list>
+		<list bit="13" 	var0="" var1="">bit13</list>
+		<list bit="14" 	var0="" var1="">bit14</list>
+		<list bit="15" 	var0="" var1="">bit15</list>
+	</bitenumeration>
+</root>

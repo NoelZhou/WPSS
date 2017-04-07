@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.firmwareUpgrade.FirmwareUpgradeDao">
+	
+	<resultMap type="firmwareUpgrade" id="firmwareUpgrade" >
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="d_type" property="dType" />
+		<result column="dsp_type" property="dspType" />
+		<result column="modbus_type" property="modbusType" />
+		<result column="ip" property="ip" />
+		<result column="port" property="port" />
+		<result column="is_sync" property="isSync" />
+		<result column="create_user" property="createUser" />
+		<result column="create_time" property="createTime" />
+		<result column="update_user" property="updateUser" />
+		<result column="update_time" property="updateTime" />
+	</resultMap>
+	
+	<select id="getDeviceinfoList" resultMap="firmwareUpgrade" parameterType="FirmwareUpgrade">
+		SELECT
+			wd.id,
+			wd.`name`,
+			wdt.modbus_type,
+			wd.device_type_id,
+			wdi.ip,
+			wdi.`port`
+		FROM
+			windpower_device wd
+		JOIN windpower_deviceinfo wdi ON wd.id = wdi.device_id
+		JOIN windpower_devicetype wdt ON wdt.id = wd.device_type_id
+		AND wdi.d_type = 'arm'
+		WHERE run_state = 0
+		<if test="modbusType != null and modbusType != ''">
+			AND wdt.modbus_type = #{modbusType}
+		</if>
+	</select>
+	
+	<select id="getDeviceinfo" resultMap="firmwareUpgrade" parameterType="FirmwareUpgrade">
+		SELECT
+			wd.id,
+			wd.`name`,
+			wdt.modbus_type,
+			wd.device_type_id,
+			wdi.ip,
+			wdi.`port`
+		FROM
+			windpower_device wd
+		JOIN windpower_deviceinfo wdi ON wd.id = wdi.device_id
+		JOIN windpower_devicetype wdt ON wdt.id = wd.device_type_id
+		AND wdi.d_type = 'arm'
+		WHERE 1=1
+		<if test="id != null and id != ''">
+			AND wd.id = #{id}
+		</if>
+	</select>
+</mapper>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="PLCid设置参数">
+		<point id="183" type="yt" addr="13803" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" 	cof="1" unit="" remark="" sysremark="" name="PLCid_1" 	category="PLCid设置参数"/>
+		<point id="184" type="yt" addr="13804" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255"   cof="1" unit="" remark="" sysremark="" name="PLCid_2" 	category="PLCid设置参数"/>
+		<point id="185" type="yt" addr="13805" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" 	cof="1" unit="" remark="" sysremark="" name="PLCid_3" 	category="PLCid设置参数"/>
+		<point id="186" type="yt" addr="13806" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255"   cof="1" unit="" remark="" sysremark="" name="PLCid_4" 	category="PLCid设置参数"/>
+		<point id="187" type="yt" addr="13807" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255" 	cof="1" unit="" remark="" sysremark="" name="PLCid_5" 	category="PLCid设置参数"/>
+		<point id="188" type="yt" addr="13808" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="255"   cof="1" unit="" remark="" sysremark="" name="PLCid_6" 	category="PLCid设置参数"/>
+	</device>
+</root>

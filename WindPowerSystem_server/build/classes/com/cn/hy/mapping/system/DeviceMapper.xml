@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.system.DeviceDao">
+
+	<select id="selectDeviceById" resultType="Device">
+	select 
+		id,device_type_id,sn,decription,avatar,create_time,update_time,create_user,update_user,name,rw_role_req,rw_role_res
+	from 
+		windpower_device 
+	where 
+		id = #{id}
+	</select> 
+
+	<resultMap type="Device" id="devicemap">
+		<id column="id" property="id" />
+		<result column="device_type_id" property="device_type_id" />
+		<result column="sn" property="sn" />
+		<result column="decription" property="decription" />
+		<result column="avatar" property="avatar" />
+		<result column="create_time" property="create_time" />
+		<result column="update_time" property="update_time" />
+		<result column="create_user" property="create_user" />
+		<result column="update_user" property="update_user" />
+		<result column="rw_role_req" property="rw_role_req" />
+		<result column="rw_role_res" property="rw_role_res" />
+		<result column="name" property="name" />
+	</resultMap>
+	
+	<select id="listDevice" resultMap="devicemap">
+		select wpd.id,wpd.device_type_id,wpd.name,wpd.create_time,wpdt.name as modName
+		from windpower_device wpd
+		LEFT JOIN windpower_devicetype wpdt on wpd.device_type_id=wpdt.id
+		where wpd.run_state=0
+	</select>
+	
+	<insert id="saveDevice" parameterType="Device">
+		<selectKey resultType="Integer" keyProperty="id">
+		      SELECT LAST_INSERT_ID()
+		</selectKey>
+		insert into windpower_device
+		(device_type_id,create_time,create_user,name)
+		values
+		(#{device_type_id},NOW(),#{create_user},#{name})
+	</insert>
+	
+	<update id="updateDevice" parameterType="Device">
+		update windpower_device 
+		<set>
+		<if test="device_type_id>0">
+		  device_type_id = #{device_type_id},
+		</if>
+		 
+		 <if test="decription!='' and decription!=null">
+		  decription = #{decription},
+		  </if>
+		 
+		 <if test="name!='' and name!=null">
+		  name = #{name},
+		  </if>
+		 
+		 <if test="update_user>0">
+		  update_user = #{update_user},
+		  </if>
+		 
+		 <if test="create_user>0">
+		  create_user = #{create_user},
+		  </if>
+		 
+		 <if test="rw_role_req!='' and rw_role_req!=null">
+		  rw_role_req = #{rw_role_req},
+		  </if>
+		  <if test="rw_role_res!='' and rw_role_res!=null">
+		  rw_role_res = #{rw_role_res},
+		  </if>
+		    <if test="rw_sql!='' and rw_sql!=null">
+		    rw_sql = #{rw_sql},
+		  </if>
+		  update_time=now()
+		</set> 
+			
+		where id = #{id}
+	</update>
+	
+	<delete id="deleteDevice" parameterType="Device">
+		delete from windpower_device
+		where id = #{id}
+	</delete>
+	
+	<select id="listDeviceByModbustype" resultMap="devicemap">
+		select a.id,a.name
+		from windpower_device a left join windpower_devicetype b 
+		on a.device_type_id = b.id 
+		where b.modbus_type = #{modbus_type} and a.run_state = '0'
+	</select>
+	
+	
+	<select id="findByModbus_type" resultMap="devicemap">
+		select wdt.modbus_type,wdt.name from 
+		windpower_devicetype wdt
+		LEFT JOIN windpower_device wd
+		on wdt.id=wd.device_type_id
+		where wd.id=#{id}
+	</select>
+</mapper>

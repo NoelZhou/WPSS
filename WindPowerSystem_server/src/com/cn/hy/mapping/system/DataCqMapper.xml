@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.system.DataCqDao">
+
+	<select id="selectDataCq" resultMap="datacqmap">
+		select c.id,d.id  device_id,c.data,
+				d.device_type_id,d.name,d.rw_role_req,d.rw_role_res,e.modbus_type
+		from
+		(select a.id,a.device_id,a.data from windpower_dataacq_tab a join
+		(select device_id ,max(id) maxid from windpower_db.windpower_dataacq_tab where  create_time >=CURRENT_TIMESTAMP - INTERVAL 120  second 
+		group by device_id ) b
+		on a.id=b.maxid and a.device_id=b.device_id) c  right  join windpower_device d
+		on c.device_id = d.id  join windpower_devicetype e on e.id=d.device_type_id
+	where d.run_state = '0' and d.errorstate='OK'
+	</select>
+	
+	<select id="selectDataCqStart" resultMap="datacqmap">
+		select c.id,d.id  device_id,c.data,
+				d.device_type_id,d.name,d.rw_role_req,d.rw_role_res,e.modbus_type
+		from
+		(select a.id,a.device_id,a.data from windpower_dataacq_tab a join
+		(select device_id ,max(id) maxid from windpower_db.windpower_dataacq_tab where  create_time >=CURRENT_TIMESTAMP - INTERVAL 120  second 
+		group by device_id ) b
+		on a.id=b.maxid and a.device_id=b.device_id) c  right  join windpower_device d
+		on c.device_id = d.id  join windpower_devicetype e on e.id=d.device_type_id
+	where d.run_state = '0' and d.errorstate='Start'
+	</select>
+	
+	<select id="selectDataCqEmail" resultMap="datacqmap">
+		select c.id,d.id  device_id,c.data,
+				d.device_type_id,d.name,d.rw_role_req,d.rw_role_res,e.modbus_type
+		from
+		(select a.id,a.device_id,a.data from windpower_dataacq_tab a join
+		(select device_id ,max(id) maxid from windpower_db.windpower_dataacq_tab where  create_time >=CURRENT_TIMESTAMP - INTERVAL 30  second 
+		group by device_id ) b
+		on a.id=b.maxid and a.device_id=b.device_id) c  right  join windpower_device d
+		on c.device_id = d.id  join windpower_devicetype e on e.id=d.device_type_id
+	where d.run_state = '0' and d.errorstate='OK'
+	</select>
+	<select id="selectErrorDataCq" resultMap="datacqmap">
+		select c.id,d.id  device_id,c.data,
+				d.device_type_id,d.name,d.rw_role_req,d.rw_role_res,e.modbus_type
+		from
+		(select a.id,a.device_id,a.data from windpower_dataacq_tab a join
+		(select device_id ,max(id) maxid from windpower_db.windpower_dataacq_tab 
+		group by device_id ) b
+		on a.id=b.maxid and a.device_id=b.device_id) c  right  join windpower_device d
+		on c.device_id = d.id  join windpower_devicetype e on e.id=d.device_type_id
+	where d.run_state = '0' and errorstate='ERROR'
+	</select>
+	<resultMap type="DataCq" id="datacqmap">
+		<id column="id" property="id" />
+		<result column="device_id" property="device_id" />
+		<result column="data" property="data" />
+	</resultMap>
+
+	<select id="getDataCq" parameterType="DataCq" resultMap="datacqmap">
+		select
+		id,device_id,data
+		from windpower_dataacq_tab where id = #{id};
+	</select>
+
+	<select id="getDataCqBydeviceid" parameterType="DataCq"
+		resultMap="datacqmap">
+		select id,device_id,data,create_time
+		from windpower_dataacq_tab where device_id = #{device_id} and create_time >=CURRENT_TIMESTAMP - INTERVAL 30  second order by id desc
+		limit 0,1;
+	</select>
+
+	<select id="listDataCqByDevice" resultMap="datacqmap">
+		select
+		id,device_id,data,create_time
+		from windpower_dataacq_tab
+		where device_id
+		= #{device_id} and ${time_area}
+	</select>
+	<select id="geAllDevice" resultType="Device">
+		select * from windpower_device where run_state=0;
+	</select>
+
+	<update id="updateDevice_rwrole">
+		update windpower_device
+		<set>
+			<if test="s1 != null and s1 != ''">
+				rw_role_req=#{s1},
+			</if>
+			<if test="s2 != null and s2 != ''">
+				rw_role_res=#{s2},
+			</if>
+			rw_sql='duishi',
+			update_time=now()
+		</set>
+	</update>
+
+</mapper>

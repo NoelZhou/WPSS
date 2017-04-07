@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="系统参数">
+		<point id="101" type="yt" addr="13128" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="" 	remark="" sysremark="" name="CRC校验" 			category="系统参数"/>
+		<point id="102" type="yt" addr="13129" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="KN.m" 	remark="" sysremark="" name="额定转矩" 			category="系统参数"/>
+		<point id="103" type="yt" addr="13130" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="100"	unit="rpm" 	remark="" sysremark="" name="额定转速" 			category="系统参数"/>
+		<point id="104" type="yt" addr="13131" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="kW" 	remark="" sysremark="" name="额定有功功率" 		category="系统参数"/>
+		<point id="105" type="yt" addr="13132" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="kVar" 	remark="" sysremark="" name="额定无功功率" 		category="系统参数"/>
+		<point id="106" type="yt" addr="13133" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统参数"/>
+		<point id="107" type="yt" addr="13134" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="功率因数角Min" 		category="系统参数"/>
+		<point id="108" type="yt" addr="13135" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="功率因数角Max" 		category="系统参数"/>
+		<point id="109" type="yt" addr="13136" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="100" 	unit="Par" 	remark="" sysremark="" name="水压下限" 			category="系统参数"/>
+		<point id="110" type="yt" addr="13137" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="Hour" 	remark="" sysremark="" name="停机连续时间" 		category="系统参数"/>
+		<point id="111" type="yt" addr="13138" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="Min" 	remark="" sysremark="" name="连续除湿时间" 		category="系统参数"/>
+		<point id="112" type="yt" addr="13139" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="V" 	remark="" sysremark="" name="电网电压下限值" 	category="系统参数"/>
+		<point id="113" type="yt" addr="13140" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="Udc调节幅值" 	category="系统参数"/>
+		<point id="114" type="yt" addr="13141" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="" 	remark="" sysremark="" name="故障统计次数" 		category="系统参数"/>
+		<point id="115" type="yt" addr="13142" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="Min" 	remark="" sysremark="" name="故障统计时间" 		category="系统参数"/>
+		<point id="116" type="yt" addr="13143" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="PDP保护次数" 		category="系统参数"/>
+		<point id="117" type="yt" addr="13144" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="硬件保护次数" 		category="系统参数"/>
+		<point id="118" type="yt" addr="13145" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="" 	remark="" sysremark="" name="撬棒故障次数" 		category="系统参数"/>
+		<point id="119" type="yt" addr="13146" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="Min" 	remark="" sysremark="" name="撬棒故障时间" 		category="系统参数"/>
+		<point id="120" type="yt" addr="13147" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="A" 	remark="" sysremark="" name="I_Te修正最大值" 	category="系统参数"/>
+		<point id="121" type="yt" addr="13148" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="A" 	remark="" sysremark="" name="I_Te修正最小值" 	category="系统参数"/>
+		<point id="122" type="yt" addr="13149" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1000"     	unit="" 	remark="" sysremark="" name="转矩允许带宽" 		category="系统参数"/>
+		<point id="123" type="yt" addr="13150" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="rpm" 	remark="" sysremark="" name="低转速点" 			category="系统参数"/>
+		<point id="124" type="yt" addr="13151" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="rpm" 	remark="" sysremark="" name="高转速点" 			category="系统参数"/>
+		<point id="125" type="yt" addr="13152" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="rpm"	remark="" sysremark="" name="低速段跟踪速度" 	category="系统参数"/>
+		<point id="126" type="yt" addr="13153" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="rpm" 	remark="" sysremark="" name="中速段跟踪速度" 	category="系统参数"/>
+		<point id="127" type="yt" addr="13154" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="rpm" 	remark="" sysremark="" name="高速段跟踪速度" 	category="系统参数"/>
+		<point id="128" type="yt" addr="13155" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="" 	remark="" sysremark="" name="" 				category="系统参数"/>
+		<point id="129" type="yt" addr="13156" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统参数"/>
+		<point id="130" type="yt" addr="13157" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"         unit="" 	remark="" sysremark="" name="" 				category="系统参数"/>
+		<point id="131" type="yt" addr="13158" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统参数"/>
+		<point id="132" type="yt" addr="13159" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统参数"/>
+		<point id="133" type="yt" addr="13160" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统参数"/>
+		<point id="134" type="yt" addr="13161" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统参数"/>
+		<point id="135" type="yt" addr="13162" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="℃" 	remark="" sysremark="" name="模组水温偏差值" 	category="系统参数"/>
+		<point id="136" type="yt" addr="13163" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="L/s" 	remark="" sysremark="" name="流量下限保护" 		category="系统参数"/>
+		<point id="137" type="yt" addr="13164" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="Min" 	remark="" sysremark="" name="柜体加热限时" 	category="系统参数"/>
+		<point id="138" type="yt" addr="13165" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="℃" 	remark="" sysremark="" name="2风机运行温度" 	category="系统参数"/>
+		<point id="139" type="yt" addr="13166" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="℃" 	remark="" sysremark="" name="4风机运行温度" 	category="系统参数"/>
+		<point id="140" type="yt" addr="13167" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="模组过温保护"		category="系统参数"/>
+		<point id="141" type="yt" addr="13168" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="柜体过温保护" 		category="系统参数"/>
+		<point id="142" type="yt" addr="13169" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="RH" 	remark="" sysremark="" name="加热启动-湿度" 	category="系统参数"/>
+		<point id="143" type="yt" addr="13170" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="℃" 	remark="" sysremark="" name="加热启动-温差" 	category="系统参数"/>
+		<point id="144" type="yt" addr="13171" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="℃" 	remark="" sysremark="" name="水温过温保护" 		category="系统参数"/>
+		<point id="145" type="yt" addr="13172" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="℃" 	remark="" sysremark="" name="降额运行温度" 		category="系统参数"/>
+		<point id="146" type="yt" addr="13173" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="℃" 	remark="" sysremark="" name="水温低温加热" 		category="系统参数"/>
+		<point id="147" type="yt" addr="13174" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="℃" 	remark="" sysremark="" name="水温停止加热" 		category="系统参数"/>
+		<point id="148" type="yt" addr="13175" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="Par" 	remark="" sysremark="" name="水压过压保护" 		category="系统参数"/>
+		<point id="149" type="yt" addr="13176" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="Par" 	remark="" sysremark="" name="水压欠压保护" 		category="系统参数"/>
+		<point id="150" type="yt" addr="13177" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="Par" 	remark="" sysremark="" name="静态水压" 			category="系统参数"/>
+	</device>
+</root>

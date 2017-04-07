@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="系统状态计数">
+		<point id="35" 	type="yc" addr="12842" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="36" 	type="yc" addr="12843" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="37" 	type="yc" addr="12844" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="38" 	type="yc" addr="12845" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="39" 	type="yc" addr="12846" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="40" 	type="yc" addr="12847" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="41" 	type="yc" addr="12848" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="42" 	type="yc" addr="12849" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="43" 	type="yc" addr="12850" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="44" 	type="yc" addr="12851" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="45" 	type="yc" addr="12852" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="46" 	type="yc" addr="12853" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="47" 	type="yc" addr="12854" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="48" 	type="yc" addr="12855" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="49" 	type="yc" addr="12856" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 		category="系统状态计数"/>
+		<point id="50" 	type="yc" addr="12857" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="USB故障次数" 	category="系统状态计数"/>
+	</device>
+</root>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.errordataparse.ErrorDataParseDao">
+
+	<resultMap type="ErrorDataParse" id="errordataparse">
+		<id column="id" property="id" />
+		<result column="device_name" property="device_name" />
+		<result column="error_type" property="error_type" />
+		<result column="createtime" property="createtime" />
+		<result column="error_column" property="error_column" />
+		<result column="errorname" property="errorname" />
+	</resultMap>
+	
+	<!-- 查询所有 -->
+	<select id="selectErrorDataParse" resultType="errordataparse">
+		select wpeap.id,wpeap.device_name,wpeap.error_type,wpeap.createtime,wpeap.error_column,wpeap.cometime,
+		wpeap.error_name,wpeap.error_excel,wpey.errorname,wpeap.errordata_id
+		from windpower_errordataparse wpeap 
+		LEFT JOIN windpower_errortype wpey on wpeap.error_type=wpey.id
+		where 1=1
+		<if test="device_name!=null and device_name!='' ">
+			and wpeap.device_name LIKE CONCAT(CONCAT('%', trim(#{device_name})),'%')
+		</if>
+		<if test="errorname!=null and errorname!='' and errorname!=0 ">
+			and wpey.id=#{errorname} 
+		</if> 
+		<if test="start_time!=null and start_time!=''">
+			and wpeap.createtime >=#{start_time}
+		</if>
+		<if test="end_time!=null and end_time!=''">
+			and wpeap.createtime &lt;=#{end_time}
+		</if>
+		ORDER BY  wpeap.createtime DESC
+	</select>
+	
+</mapper>

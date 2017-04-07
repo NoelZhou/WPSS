@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cn.hy.dao.modbustcp.ModbusSkAppDao">
+
+	<select id="getModbusSkApp"  parameterType="ModbusSkApp"  resultMap="modbusSkAppMap">
+		select id,name,addr,unit,category,isbasicparm from 
+		windpower_basedataset where addr = #{addr} and modbus_type = #{modbus_type}
+	</select>
+	
+	<select id="getModbusSkAppById" resultType="ModbusSkApp">
+		select id,name,addr,unit,category,modbus_type,isbasicparm from windpower_basedataset
+		 where id = #{id}
+	</select>
+	
+	<select id="listModbusSkApp" resultMap="modbusSkAppMap">
+		select category, id,type,name,addr,datalen,datatype,cof,unit,remark,isbasicparm from 
+		modbustcp_sk_app where modbus_type = #{modbus_type}
+	</select>
+	
+	<select id="alistModbusSkApp" resultMap="modbusSkAppMap">
+		 <!--select category, id,type,name,addr,datalen,datatype,cof,unit,remark,isbasicparm from 
+		modbustcp_sk_app where modbus_type = #{modbus_type} and name!="" and rolecode="R" and addr  
+		not in (SELECT addr from modbustcp_sk_appparame where modbus_type=#{modbus_type} and addr!="" )
+		ORDER BY addr ASC-->
+		select category, id,type,name,addr,datalen,datatype,cof,unit,remark,isbasicparm from 
+		windpower_basedataset where modbus_type = #{modbus_type} ORDER BY addr ASC 
+	</select>
+	
+	<update id="updateModbusSkApp" parameterType="ModbusSkApp">
+		update windpower_basedataset 
+		set 
+			isbasicparm = #{isbasicparm}
+		where id in (${idStr})
+	</update>
+	
+	<resultMap type="ModbusSkApp" id="modbusSkAppMap">
+		<id column="id" property="id" />
+		<result column="name" property="name"></result>
+		<result column="addr" property="addr"></result>
+		<result column="unit" property="unit"></result>
+		<result column="category" property="category"></result>
+		<result column="isbasicparm" property="isbasicparm"></result>
+	</resultMap>
+</mapper>

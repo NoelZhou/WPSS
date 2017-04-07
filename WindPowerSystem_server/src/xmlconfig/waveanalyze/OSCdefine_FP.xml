@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="全功率变流器" name="网侧实时示波器名称">
+		<point id="1" 	name="电网线电压Uab" 			number="1"	category="网侧实时示波器名称"/>
+		<point id="2" 	name="电网线电压Ubc" 			number="2"	category="网侧实时示波器名称"/>
+		<point id="3" 	name="1号模组A相桥臂电流" 		number="3"	category="网侧实时示波器名称"/>
+		<point id="4" 	name="1号模组B相桥臂电流" 		number="4"	category="网侧实时示波器名称"/>
+		<point id="5" 	name="1号模组C相桥臂电流" 		number="5"	category="网侧实时示波器名称"/>
+		<point id="6" 	name="2号模组A相桥臂电流" 		number="6"	category="网侧实时示波器名称"/>
+		<point id="7" 	name="2号模组B相桥臂电流" 		number="7"	category="网侧实时示波器名称"/>
+		<point id="8" 	name="2号模组C相桥臂电流" 		number="8"	category="网侧实时示波器名称"/>
+		<point id="9" 	name="直流母线电压" 			number="9"	category="网侧实时示波器名称"/>
+		<point id="10" 	name="电容线电压Uab" 			number="10"	category="网侧实时示波器名称"/>
+		<point id="11" 	name="电容线电压Ubc" 			number="11"	category="网侧实时示波器名称"/>
+		<point id="12" 	name="滤波电容电流" 			number="12"	category="网侧实时示波器名称"/>
+		<point id="13" 	name="锁相角度" 			number="13"	category="网侧实时示波器名称"/>
+		<point id="14" 	name="电压调节器输出" 			number="14"	category="网侧实时示波器名称"/>
+		<point id="15" 	name="网侧三相电流和" 			number="15"	category="网侧实时示波器名称"/>
+		<point id="16" 	name="网侧状态字" 			number="16"	category="网侧实时示波器名称"/>
+		<point id="17" 	name="A相PWM输出" 			number="17"	category="网侧实时示波器名称"/>
+		<point id="18" 	name="B相PWM输出" 			number="18"	category="网侧实时示波器名称"/>
+		<point id="19" 	name="C相PWM输出" 			number="19"	category="网侧实时示波器名称"/>
+		<point id="20" 	name="正序有功电流反馈" 		number="20"	category="网侧实时示波器名称"/>
+		<point id="21" 	name="正序无功电流反馈" 		number="21"	category="网侧实时示波器名称"/>
+		<point id="22" 	name="负序有功电流反馈" 		number="22"	category="网侧实时示波器名称"/>
+		<point id="23" 	name="负序无功电流反馈" 		number="23"	category="网侧实时示波器名称"/>
+		<point id="24" 	name="电网频率" 			number="24"	category="网侧实时示波器名称"/>
+		<point id="25" 	name="急停状态信号" 			number="25"	category="网侧实时示波器名称"/>
+		<point id="26" 	name="电压锁相正序滤波后有功分量" 	number="26"	category="网侧实时示波器名称"/>
+		<point id="27" 	name="电压锁相正序滤波后无功分量" 	number="27"	category="网侧实时示波器名称"/>
+		<point id="28" 	name="电压锁相负序滤波后有功分量" 	number="28"	category="网侧实时示波器名称"/>
+		<point id="29" 	name="电压锁相负序滤波后无功分量" 	number="29"	category="网侧实时示波器名称"/>
+		<point id="30" 	name="HVRT/LVRT触发类型" 		number="30"	category="网侧实时示波器名称"/>
+		<point id="31" 	name="Chopper驱动信号" 			number="31"	category="网侧实时示波器名称"/>
+		<point id="32" 	name="主断路器状态信号" 		number="32"	category="网侧实时示波器名称"/>
+	</device>
+
+	<device machinetype="全功率变流器" name="机侧实时示波器名称">
+		<point id="33" 	name="1号模组线电压Uuv" 		number="1"	category="机侧实时示波器名称"/>
+		<point id="34" 	name="1号模组线电压Uvw" 		number="2"	category="机侧实时示波器名称"/>
+		<point id="35" 	name="2号模组线电压Uuv" 		number="3"	category="机侧实时示波器名称"/>
+		<point id="36" 	name="2号模组线电压Uvw" 		number="4"	category="机侧实时示波器名称"/>
+		<point id="37" 	name="1号模组U相桥臂电流" 		number="5"	category="机侧实时示波器名称"/>
+		<point id="38" 	name="1号模组V相桥臂电流" 		number="6"	category="机侧实时示波器名称"/>
+		<point id="39" 	name="1号模组W相桥臂电流" 		number="7"	category="机侧实时示波器名称"/>
+		<point id="40" 	name="2号模组U相桥臂电流" 		number="8"	category="机侧实时示波器名称"/>
+		<point id="41" 	name="2号模组V相桥臂电流" 		number="9"	category="机侧实时示波器名称"/>
+		<point id="42" 	name="2号模组W相桥臂电流" 		number="10"	category="机侧实时示波器名称"/>
+		<point id="43" 	name="直流母线电压" 			number="11"	category="机侧实时示波器名称"/>
+		<point id="44" 	name="1号模组锁相角度" 			number="12"	category="机侧实时示波器名称"/>
+		<point id="45" 	name="2号模组锁相角度" 			number="13"	category="机侧实时示波器名称"/>
+		<point id="46" 	name="1号模组锁相频率" 			number="14"	category="机侧实时示波器名称"/>
+		<point id="47" 	name="2号模组锁相频率" 			number="15"	category="机侧实时示波器名称"/>
+		<point id="48" 	name="1号模组U相PWM输出" 		number="16"	category="机侧实时示波器名称"/>
+		<point id="49" 	name="1号模组V相PWM输出" 		number="17"	category="机侧实时示波器名称"/>
+		<point id="50" 	name="1号模组W相PWM输出" 		number="18"	category="机侧实时示波器名称"/>
+		<point id="51" 	name="2号模组U相PWM输出" 		number="19"	category="机侧实时示波器名称"/>
+		<point id="52" 	name="2号模组V相PWM输出" 		number="20"	category="机侧实时示波器名称"/>
+		<point id="53" 	name="2号模组W相PWM输出" 		number="21"	category="机侧实时示波器名称"/>
+		<point id="54" 	name="1号模组正序有功电流反馈" 		number="22"	category="机侧实时示波器名称"/>
+		<point id="55" 	name="1号模组正序无功电流反馈" 		number="23"	category="机侧实时示波器名称"/>
+		<point id="56" 	name="2号模组正序有功电流反馈" 		number="24"	category="机侧实时示波器名称"/>
+		<point id="57" 	name="2号模组正序无功电流反馈" 		number="25"	category="机侧实时示波器名称"/>
+		<point id="58" 	name="机侧三相电流和" 			number="26"	category="机侧实时示波器名称"/>
+		<point id="59" 	name="机侧状态字" 			number="27"	category="机侧实时示波器名称"/>
+		<point id="60" 	name="急停状态信号" 			number="28"	category="机侧实时示波器名称"/>
+		<point id="61" 	name="1号主接触器状态信号" 	 	number="29"	category="机侧实时示波器名称"/>
+		<point id="62" 	name="2号主接触器状态信号" 		number="30"	category="机侧实时示波器名称"/>
+		<point id="63" 	name="弱磁控制角度" 			number="31"	category="机侧实时示波器名称"/>
+		<point id="64" 	name="功率因数角度" 			number="32"	category="机侧实时示波器名称"/>
+	</device>
+
+	<device machinetype="全功率变流器" name="网侧故障波形名称">
+		<point id="65" 	name="电网线电压Uab" 			category="网侧故障波形名称"/>
+		<point id="66" 	name="电网线电压Ubc" 			category="网侧故障波形名称"/>
+		<point id="67" 	name="1号模组A相桥臂电流" 		category="网侧故障波形名称"/>
+		<point id="68" 	name="1号模组B相桥臂电流" 		category="网侧故障波形名称"/>
+		<point id="69" 	name="1号模组C相桥臂电流" 		category="网侧故障波形名称"/>
+		<point id="70" 	name="2号模组A相桥臂电流" 		category="网侧故障波形名称"/>
+		<point id="71" 	name="2号模组B相桥臂电流" 		category="网侧故障波形名称"/>
+		<point id="72" 	name="2号模组C相桥臂电流" 		category="网侧故障波形名称"/>
+		<point id="73" 	name="直流母线电压" 			category="网侧故障波形名称"/>
+		<point id="74" 	name="电容线电压Uab" 			category="网侧故障波形名称"/>
+		<point id="75" 	name="电容线电压Ubc" 			category="网侧故障波形名称"/>
+		<point id="76" 	name="滤波电容电流" 			category="网侧故障波形名称"/>
+		<point id="77" 	name="锁相角度" 			category="网侧故障波形名称"/>
+		<point id="78" 	name="电压调节器输出" 			category="网侧故障波形名称"/>
+		<point id="79" 	name="网侧三相电流和" 			category="网侧故障波形名称"/>
+		<point id="80" 	name="网侧状态字" 			category="网侧故障波形名称"/>
+		<point id="81" 	name="A相PWM输出" 			category="网侧故障波形名称"/>
+		<point id="82" 	name="B相PWM输出" 			category="网侧故障波形名称"/>
+		<point id="83" 	name="C相PWM输出" 			category="网侧故障波形名称"/>
+		<point id="84" 	name="正序有功电流反馈" 		category="网侧故障波形名称"/>
+		<point id="85" 	name="正序无功电流反馈" 		category="网侧故障波形名称"/>
+		<point id="86" 	name="负序有功电流反馈" 		category="网侧故障波形名称"/>
+		<point id="87" 	name="负序无功电流反馈" 		category="网侧故障波形名称"/>
+		<point id="88" 	name="电网频率" 			category="网侧故障波形名称"/>
+		<point id="89" 	name="急停状态信号"		 	category="网侧故障波形名称"/>
+		<point id="90" 	name="电压锁相正序滤波后有功分量" 	category="网侧故障波形名称"/>
+		<point id="91" 	name="电压锁相正序滤波后无功分量" 	category="网侧故障波形名称"/>
+		<point id="92" 	name="电压锁相负序滤波后有功分量" 	category="网侧故障波形名称"/>
+		<point id="93" 	name="电压锁相负序滤波后无功分量" 	category="网侧故障波形名称"/>
+		<point id="94" 	name="HVRT/LVRT触发类型" 			category="网侧故障波形名称"/>
+		<point id="95" 	name="Chopper驱动信号" 			category="网侧故障波形名称"/>
+		<point id="96" 	name="主断路器状态信号" 		category="网侧故障波形名称"/>
+	</device>
+
+	<device machinetype="全功率变流器" name="机侧故障波形名称">
+		<point id="97" 	name="1号模组线电压Uuv" 		category="机侧故障波形名称"/>
+		<point id="98" 	name="1号模组线电压Uvw" 		category="机侧故障波形名称"/>
+		<point id="99" 	name="2号模组线电压Uuv" 		category="机侧故障波形名称"/>
+		<point id="100" name="2号模组线电压Uvw" 		category="机侧故障波形名称"/>
+		<point id="101" name="1号模组U相桥臂电流" 		category="机侧故障波形名称"/>
+		<point id="102" name="1号模组V相桥臂电流" 		category="机侧故障波形名称"/>
+		<point id="103" name="1号模组W相桥臂电流" 		category="机侧故障波形名称"/>
+		<point id="104" name="2号模组U相桥臂电流" 		category="机侧故障波形名称"/>
+		<point id="105" name="2号模组V相桥臂电流" 		category="机侧故障波形名称"/>
+		<point id="106" name="2号模组W相桥臂电流" 		category="机侧故障波形名称"/>
+		<point id="107" name="直流母线电压" 			category="机侧故障波形名称"/>
+		<point id="108" name="1号模组锁相角度" 			category="机侧故障波形名称"/>
+		<point id="109" name="2号模组锁相角度" 			category="机侧故障波形名称"/>
+		<point id="110" name="1号模组锁相频率" 			category="机侧故障波形名称"/>
+		<point id="111" name="2号模组锁相频率" 			category="机侧故障波形名称"/>
+		<point id="112" name="1号模组U相PWM输出" 		category="机侧故障波形名称"/>
+		<point id="113" name="1号模组V相PWM输出" 		category="机侧故障波形名称"/>
+		<point id="114" name="1号模组W相PWM输出" 		category="机侧故障波形名称"/>
+		<point id="115" name="2号模组U相PWM输出" 		category="机侧故障波形名称"/>
+		<point id="116" name="2号模组V相PWM输出" 		category="机侧故障波形名称"/>
+		<point id="117" name="2号模组W相PWM输出" 		category="机侧故障波形名称"/>
+		<point id="118" name="1号模组正序有功电流反馈" 		category="机侧故障波形名称"/>
+		<point id="119" name="1号模组正序无功电流反馈" 		category="机侧故障波形名称"/>
+		<point id="120" name="2号模组正序有功电流反馈" 		category="机侧故障波形名称"/>
+		<point id="121" name="2号模组正序无功电流反馈" 		category="机侧故障波形名称"/>
+		<point id="122" name="机侧三相电流和" 			category="机侧故障波形名称"/>
+		<point id="123" name="机侧状态字" 			category="机侧故障波形名称"/>
+		<point id="124" name="急停状态信号" 			category="机侧故障波形名称"/>
+		<point id="125" name="1号主接触器状态信号" 		category="机侧故障波形名称"/>
+		<point id="126" name="2号主接触器状态信号" 		category="机侧故障波形名称"/>
+		<point id="127" name="弱磁控制角度" 			category="机侧故障波形名称"/>
+		<point id="128" name="功率因数角度" 			category="机侧故障波形名称"/>
+	</device>
+</root>

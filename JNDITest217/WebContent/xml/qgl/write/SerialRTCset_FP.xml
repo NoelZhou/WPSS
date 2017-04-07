@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<root>
+	<device machinetype="全功率变流器" name="变流器RTC时钟设置">
+		<point id="335" type="yt" addr="672" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="99" cof="1" unit="" remark="" sysremark="" name="年设置" category="变流器RTC时钟设置"/>
+		<point id="336" type="yt" addr="673" datalen="2" datatype="S16" datalimitmin="1" datalimitmax="12" cof="1" unit="" remark="" sysremark="" name="月设置" category="变流器RTC时钟设置"/>
+		<point id="337" type="yt" addr="674" datalen="2" datatype="S16" datalimitmin="1" datalimitmax="31" cof="1" unit="" remark="" sysremark="" name="日设置" category="变流器RTC时钟设置"/>
+		<point id="338" type="yt" addr="675" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="24" cof="1" unit="" remark="" sysremark="" name="时设置" category="变流器RTC时钟设置"/>
+		<point id="339" type="yt" addr="676" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="60" cof="1" unit="" remark="" sysremark="" name="时设置" category="变流器RTC时钟设置"/>
+		<point id="340" type="yt" addr="677" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="60" cof="1" unit="" remark="" sysremark="" name="时设置" category="变流器RTC时钟设置"/>
+	</device>
+</root>

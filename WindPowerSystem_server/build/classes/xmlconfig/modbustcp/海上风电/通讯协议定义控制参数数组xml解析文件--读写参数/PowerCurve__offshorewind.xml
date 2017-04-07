@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="功率曲线参数">
+		<point id="157" type="yt" addr="13256" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速1" 	category="功率曲线参数"/>
+		<point id="158" type="yt" addr="13257" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩1" 	category="功率曲线参数"/>
+		<point id="159" type="yt" addr="13258" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速2" 	category="功率曲线参数"/>
+		<point id="160" type="yt" addr="13259" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩2" 	category="功率曲线参数"/>
+		<point id="161" type="yt" addr="13260" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速3" 	category="功率曲线参数"/>
+		<point id="162" type="yt" addr="13261" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩3" 	category="功率曲线参数"/>
+		<point id="163" type="yt" addr="13262" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速4" 	category="功率曲线参数"/>
+		<point id="164" type="yt" addr="13263" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩4" 	category="功率曲线参数"/>
+		<point id="165" type="yt" addr="13264" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速5" 	category="功率曲线参数"/>
+		<point id="166" type="yt" addr="13265" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩5" 	category="功率曲线参数"/>
+		<point id="167" type="yt" addr="13266" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速6" 	category="功率曲线参数"/>
+		<point id="168" type="yt" addr="13267" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩6" 	category="功率曲线参数"/>
+		<point id="169" type="yt" addr="13268" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速7" 	category="功率曲线参数"/>
+		<point id="170" type="yt" addr="13269" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩7" 	category="功率曲线参数"/>
+		<point id="171" type="yt" addr="13270" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速8" 	category="功率曲线参数"/>
+		<point id="172" type="yt" addr="13271" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩8" 	category="功率曲线参数"/>
+		<point id="173" type="yt" addr="13272" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速9" 	category="功率曲线参数"/>
+		<point id="174" type="yt" addr="13273" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩9" 	category="功率曲线参数"/>
+		<point id="175" type="yt" addr="13274" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速10" category="功率曲线参数"/>
+		<point id="176" type="yt" addr="13275" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩10" category="功率曲线参数"/>
+		<point id="177" type="yt" addr="13276" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速11" category="功率曲线参数"/>
+		<point id="178" type="yt" addr="13277" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩11" category="功率曲线参数"/>
+		<point id="179" type="yt" addr="13278" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速12" category="功率曲线参数"/>
+		<point id="180" type="yt" addr="13279" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩12" category="功率曲线参数"/>
+		<point id="181" type="yt" addr="13280" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="2000" 	cof="1" unit="rpm" remark="" sysremark="" name="转速13" category="功率曲线参数"/>
+		<point id="182" type="yt" addr="13281" datalen="2" datatype="S16" datalimitmin="0" datalimitmax="20000" cof="1" unit="N.m" remark="" sysremark="" name="转矩13" category="功率曲线参数"/>
+	</device>
+</root>

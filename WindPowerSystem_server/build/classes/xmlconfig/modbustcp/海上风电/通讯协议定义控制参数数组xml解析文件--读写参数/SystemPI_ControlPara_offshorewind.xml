@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="系统调节器参数">
+		<point id="245" type="yt" addr="13949" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="电压环Kp" 			category="系统调节器参数"/>
+		<point id="246" type="yt" addr="13950" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="电压环Ki" 			category="系统调节器参数"/>
+		<point id="247" type="yt" addr="13951" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="网侧锁相环Kp" 		category="系统调节器参数"/>
+		<point id="248" type="yt" addr="13952" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="网侧锁相环Ki" 		category="系统调节器参数"/>
+		<point id="249" type="yt" addr="13953" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="机侧锁相环Kp" 		category="系统调节器参数"/>
+		<point id="250" type="yt" addr="13954" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="机侧锁相环Ki" 		category="系统调节器参数"/>
+		<point id="251" type="yt" addr="13955" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="" 	remark="" sysremark="" name="网侧有源阻尼Kp" 		category="系统调节器参数"/>
+		<point id="252" type="yt" addr="13956" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="" 	remark="" sysremark="" name="机侧有源阻尼Kp" 		category="系统调节器参数"/>
+		<point id="253" type="yt" addr="13957" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="中点平衡控制Ki" 		category="系统调节器参数"/>
+		<point id="254" type="yt" addr="13958" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="" 	remark="" sysremark="" name="网侧电流环Kp" 		category="系统调节器参数"/>
+		<point id="255" type="yt" addr="13959" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="网侧电流环Ki" 		category="系统调节器参数"/>
+		<point id="256" type="yt" addr="13960" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="机侧电流环Kp" 		category="系统调节器参数"/>
+		<point id="257" type="yt" addr="13961" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="机侧电流环Ki" 		category="系统调节器参数"/>
+		<point id="258" type="yt" addr="13962" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="259" type="yt" addr="13963" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="260" type="yt" addr="13964" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="261" type="yt" addr="13965" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="" 	remark="" sysremark="" name="网侧1查询编号" 	category="系统调节器参数"/>
+		<point id="262" type="yt" addr="13966" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="" 	remark="" sysremark="" name="网侧2查询编号" 	category="系统调节器参数"/>
+		<point id="263" type="yt" addr="13967" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="" 	remark="" sysremark="" name="机侧1查询编号" 	category="系统调节器参数"/>
+		<point id="264" type="yt" addr="13968" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit="" 	remark="" sysremark="" name="机侧2查询编号" 	category="系统调节器参数"/>
+		<point id="265" type="yt" addr="13969" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"   	unit=""		remark="" sysremark="" name="PLC查询编号" 	category="系统调节器参数"/>
+		<point id="266" type="yt" addr="13970" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"  	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="267" type="yt" addr="13971" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="268" type="yt" addr="13972" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"     	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="269" type="yt" addr="13973" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="270" type="yt" addr="13974" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1"         unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="271" type="yt" addr="13975" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="272" type="yt" addr="13976" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="273" type="yt" addr="13977" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="274" type="yt" addr="13978" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+		<point id="275" type="yt" addr="13979" datalen="2" datatype="S16" datalimitmin="-32768" 	datalimitmax="32767" 	cof="1" 	unit="" 	remark="" sysremark="" name="" 				category="系统调节器参数"/>
+	</device>
+</root>

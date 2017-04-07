@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="网侧实时参数1">
+		<point id="81" 	type="yc" addr="12888" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="实时值" sysremark="" 	name="电网电压Uab" 		category="网侧实时参数1"/>
+		<point id="82" 	type="yc" addr="12889" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="实时值" sysremark="" 	name="电网电压Ubc" 		category="网侧实时参数1"/>
+		<point id="83" 	type="yc" addr="12890" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="实时值" sysremark="" 	name="A相桥臂电流" 		category="网侧实时参数1"/>
+		<point id="84" 	type="yc" addr="12891" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="实时值" sysremark="" 	name="B相桥臂电流" 		category="网侧实时参数1"/>
+		<point id="85" 	type="yc" addr="12892" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="实时值" sysremark="" 	name="C相桥臂电流" 		category="网侧实时参数1"/>
+		<point id="86" 	type="yc" addr="12893" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="实时值" sysremark="" 	name="正母线电压" 		category="网侧实时参数1"/>
+		<point id="87" 	type="yc" addr="12894" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="实时值" sysremark="" 	name="负母线电压" 		category="网侧实时参数1"/>
+		<point id="88" 	type="yc" addr="12895" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="实时值" sysremark="" 	name="母线电压" 		category="网侧实时参数1"/>
+		<point id="89" 	type="yc" addr="12896" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="实时值" sysremark="" 	name="电容电压Uab" 		category="网侧实时参数1"/>
+		<point id="90" 	type="yc" addr="12897" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="实时值" sysremark="" 	name="电容电压Ubc" 		category="网侧实时参数1"/>
+		<point id="91" 	type="yc" addr="12898" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="平均值" sysremark="" 	name="电网电压Uab" 		category="网侧实时参数1"/>
+		<point id="92" 	type="yc" addr="12899" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="平均值" sysremark="" 	name="电网电压Ubc" 		category="网侧实时参数1"/>
+		<point id="93" 	type="yc" addr="12900" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="平均值" sysremark="" 	name="A相桥臂电流" 		category="网侧实时参数1"/>
+		<point id="94" 	type="yc" addr="12901" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="平均值" sysremark="" 	name="B相桥臂电流" 		category="网侧实时参数1"/>
+		<point id="95" 	type="yc" addr="12902" datalen="2" datatype="S16" cof="1" 	unit="A" 	remark="平均值" sysremark="" 	name="C相桥臂电流" 		category="网侧实时参数1"/>
+		<point id="96" 	type="yc" addr="12903" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="平均值" sysremark="" 	name="正母线电压" 		category="网侧实时参数1"/>
+		<point id="97" 	type="yc" addr="12904" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="平均值" sysremark="" 	name="负母线电压" 		category="网侧实时参数1"/>
+		<point id="98" 	type="yc" addr="12905" datalen="2" datatype="S16" cof="1" 	unit="V" 	remark="平均值" sysremark="" 	name="母线电压" 		category="网侧实时参数1"/>
+		<point id="99" 	type="yc" addr="12906" datalen="2" datatype="S16" cof="1" 	unit="kW" 	remark="" 	sysremark="" 	name="有功功率" 		category="网侧实时参数1"/>
+		<point id="100" type="yc" addr="12907" datalen="2" datatype="S16" cof="1" 	unit="kVar" 	remark="" 	sysremark="" 	name="无功功率" 		category="网侧实时参数1"/>
+		<point id="101" type="yc" addr="12908" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 	sysremark="" 	name="" 			category="网侧实时参数1"/>
+		<point id="102" type="yc" addr="12909" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 	sysremark="" 	name="" 			category="网侧实时参数1"/>
+		<point id="103" type="yc" addr="12910" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 	sysremark="" 	name="" 			category="网侧实时参数1"/>
+		<point id="104" type="yc" addr="12911" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 	sysremark="" 	name="" 			category="网侧实时参数1"/>
+		<point id="105" type="yc" addr="12912" datalen="2" datatype="S16" cof="1" 	unit="" 	remark="" 	sysremark="" 	name="" 			category="网侧实时参数1"/>
+	</device>
+</root>

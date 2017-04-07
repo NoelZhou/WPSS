@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<root>
+	<device machinetype="海上风电变流器" name="DSP状态">
+		<point id="51" 	type="yc" addr="12858" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="网侧1返回参数" 		category="DSP状态"/>
+		<point id="52" 	type="yc" addr="12859" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="网侧1返回编号" 		category="DSP状态"/>
+		<point id="53" 	type="yc" addr="12860" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="网侧1返回状态" 			category="DSP状态"/>
+		<point id="54" 	type="yc" addr="12861" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="网侧2返回参数" 		category="DSP状态"/>
+		<point id="55" 	type="yc" addr="12862" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="网侧2返回编号" 		category="DSP状态"/>
+		<point id="56" 	type="yc" addr="12863" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="网侧2返回状态" 			category="DSP状态"/>
+		<point id="57" 	type="yc" addr="12864" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="58" 	type="yc" addr="12865" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="59" 	type="yc" addr="12866" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="60" 	type="yc" addr="12867" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="61" 	type="yc" addr="12868" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="62" 	type="yc" addr="12869" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="63" 	type="yc" addr="12870" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="64" 	type="yc" addr="12871" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="65" 	type="yc" addr="12872" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="66" 	type="yc" addr="12873" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="机侧1返回参数" 		category="DSP状态"/>
+		<point id="67" 	type="yc" addr="12874" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="机侧1返回编号" 		category="DSP状态"/>
+		<point id="68" 	type="yc" addr="12875" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="机侧1返回状态" 			category="DSP状态"/>
+		<point id="69" 	type="yc" addr="12876" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="机侧2返回参数" 		category="DSP状态"/>
+		<point id="70" 	type="yc" addr="12877" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="机侧2返回编号" 		category="DSP状态"/>
+		<point id="71" 	type="yc" addr="12878" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="Hex" 	name="机侧2返回状态" 			category="DSP状态"/>
+		<point id="72" 	type="yc" addr="12879" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="73" 	type="yc" addr="12880" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="74" 	type="yc" addr="12881" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="75" 	type="yc" addr="12882" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="76" 	type="yc" addr="12883" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="77" 	type="yc" addr="12884" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="78" 	type="yc" addr="12885" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="79" 	type="yc" addr="12886" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+		<point id="80" 	type="yc" addr="12887" datalen="2" datatype="U16" cof="1" 	unit="" 	remark="" sysremark="" 	name="" 				category="DSP状态"/>
+	</device>
+</root>
